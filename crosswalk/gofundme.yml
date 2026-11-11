@@ -1,0 +1,64 @@
+provider: gofundme
+apis_io: https://apis.io/providers/gofundme/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donor:
+    path_segment:
+    - supporters
+    - donors
+    properties:
+      email: email_address
+      first_name: first_name
+      id: id
+      last_name: last_name
+      created_at: created_at
+      phone: phone
+      gender: gender
+      organization_id: organization_id
+      updated_at: updated_at
+    core_coverage: 0.818
+    evidence:
+    - openapi/_original/gofundme-pro-api-openapi.json#DELETE /supporters/{supporter}
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /campaigns/{campaign}/supporters
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /fundraising-pages/{id}/donors
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /fundraising-teams/{id}/donors
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /organizations/{organization}/supporters
+  fundraising_campaign:
+    path_segment:
+    - campaigns
+    properties:
+      created_at: created_at
+      id:
+      - external_id
+      - id
+      name: name
+      goal: goal
+      status:
+      - state
+      - status
+      updated_at: updated_at
+      currency: currency_code
+    core_coverage: 0.778
+    evidence:
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /campaigns/{campaign}
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /members/{member_id}/campaigns
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /organizations/{organization}/campaigns
+    - openapi/_original/gofundme-pro-api-openapi.json#PUT /campaigns/{campaign}
+  fund:
+    path_segment:
+    - designations
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      updated_at: updated_at
+      description: description
+      is_default: is_default
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/gofundme-pro-api-openapi.json#DELETE /designations/{designation}
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /designations/{designation}
+    - openapi/_original/gofundme-pro-api-openapi.json#GET /organizations/{organization}/designations
+    - openapi/_original/gofundme-pro-api-openapi.json#POST /organizations/{organization}/designations
+    - openapi/_original/gofundme-pro-api-openapi.json#PUT /designations/{designation}

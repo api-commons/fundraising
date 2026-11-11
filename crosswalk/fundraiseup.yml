@@ -1,0 +1,79 @@
+provider: fundraiseup
+apis_io: https://apis.io/providers/fundraiseup/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donor:
+    path_segment:
+    - supporters
+    properties:
+      email: email
+      first_name: first_name
+      id: id
+      last_name: last_name
+      created_at: created_at
+      phone: phone
+      address: address
+      name: title
+    core_coverage: 0.727
+    evidence:
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/supporters
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/supporters/{id}
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/donor_portal/access_links/supporters/{id}
+  donation:
+    path_segment:
+    - donations
+    properties:
+      id: id
+      amount: amount
+      metadata: custom_fields
+      created_at: created_at
+      donor_id: supporter
+      campaign_id: campaign
+      status: status
+      anonymous: anonymous
+      currency: currency
+      fund_id: designation
+      payment_method: payment_method
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/donations
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/donations/{id}
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/donations
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/donations/{id}
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/upgrade_links/donations/{id}
+  fundraising_campaign:
+    path_segment:
+    - fundraisers
+    - campaigns
+    properties:
+      created_at: created_at
+      id: id
+      name: name
+      goal: goal
+      end_date: end_date
+      status: status
+      currency: currency
+    core_coverage: 0.778
+    evidence:
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/campaigns
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/campaigns/{id}
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/fundraisers
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/fundraisers/{id}
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/fundraisers
+  fund:
+    path_segment:
+    - designations
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      updated_at: updated_at
+      is_default: is_default
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/fundraiseup-openapi.json#DELETE /v1/designations/{id}
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/designations
+    - openapi/_original/fundraiseup-openapi.json#GET /v1/designations/{id}
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/designations
+    - openapi/_original/fundraiseup-openapi.json#POST /v1/designations/{id}

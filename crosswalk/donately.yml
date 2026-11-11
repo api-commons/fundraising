@@ -1,0 +1,17 @@
+provider: donately
+apis_io: https://apis.io/providers/donately/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - donations
+    properties:
+      donor_id: account_id
+      type: donation_type
+      campaign_id: campaign_id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/donately-openapi.yml#GET /donations
+    - openapi/_original/donately-openapi.yml#GET /donations/{id}
+    - openapi/_original/donately-openapi.yml#POST /donations

@@ -1,0 +1,18 @@
+provider: chariot
+apis_io: https://apis.io/providers/chariot/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - donations
+    properties:
+      id: id
+      metadata: properties
+      created_at: created_at
+      updated_at: updated_at
+      currency: currency
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/chariot-openapi-original.yml#GET /v1/donations
+    - openapi/_original/chariot-openapi-original.yml#GET /v1/donations/{id}

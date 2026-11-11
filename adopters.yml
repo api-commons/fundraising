@@ -1,0 +1,87 @@
+context: fundraising
+generated: '2026-11-11'
+adopters:
+- provider: almabase
+  apis_io: https://apis.io/providers/almabase/
+  crosswalk: crosswalk/almabase.yml
+  concepts:
+  - donation
+- provider: blackbaud
+  apis_io: https://apis.io/providers/blackbaud/
+  crosswalk: crosswalk/blackbaud.yml
+  concepts:
+  - donation
+  - donor
+  - fund
+  - fundraising_campaign
+- provider: bloomerang
+  apis_io: https://apis.io/providers/bloomerang/
+  crosswalk: crosswalk/bloomerang.yml
+  concepts:
+  - donor
+  - fund
+  - fundraising_campaign
+- provider: bonterra-fka-everyaction
+  apis_io: https://apis.io/providers/bonterra-fka-everyaction/
+  crosswalk: crosswalk/bonterra-fka-everyaction.yml
+  concepts:
+  - donation
+- provider: chariot
+  apis_io: https://apis.io/providers/chariot/
+  crosswalk: crosswalk/chariot.yml
+  concepts:
+  - donation
+- provider: classy-org
+  apis_io: https://apis.io/providers/classy-org/
+  crosswalk: crosswalk/classy-org.yml
+  concepts:
+  - donor
+  - fund
+  - fundraising_campaign
+- provider: donately
+  apis_io: https://apis.io/providers/donately/
+  crosswalk: crosswalk/donately.yml
+  concepts:
+  - donation
+- provider: fundraiseup
+  apis_io: https://apis.io/providers/fundraiseup/
+  crosswalk: crosswalk/fundraiseup.yml
+  concepts:
+  - donation
+  - donor
+  - fund
+  - fundraising_campaign
+- provider: gofundme
+  apis_io: https://apis.io/providers/gofundme/
+  crosswalk: crosswalk/gofundme.yml
+  concepts:
+  - donor
+  - fund
+  - fundraising_campaign
+- provider: goodstack
+  apis_io: https://apis.io/providers/goodstack/
+  crosswalk: crosswalk/goodstack.yml
+  concepts:
+  - donation
+- provider: nationbuilder
+  apis_io: https://apis.io/providers/nationbuilder/
+  crosswalk: crosswalk/nationbuilder.yml
+  concepts:
+  - donation
+- provider: neonone
+  apis_io: https://apis.io/providers/neonone/
+  crosswalk: crosswalk/neonone.yml
+  concepts:
+  - donation
+- provider: overflow
+  apis_io: https://apis.io/providers/overflow/
+  crosswalk: crosswalk/overflow.yml
+  concepts:
+  - donation
+  - donor
+  - fundraising_campaign
+- provider: planning-center
+  apis_io: https://apis.io/providers/planning-center/
+  crosswalk: crosswalk/planning-center.yml
+  concepts:
+  - donation

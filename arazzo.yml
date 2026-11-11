@@ -1,0 +1,56 @@
+arazzo: 1.0.1
+info:
+  title: Nonprofit Fundraising workflows (API Commons)
+  version: 0.1.0-draft.20261111
+  summary: Reference workflows over the common Nonprofit Fundraising operations.
+  description: 'Reference compositions of the operations this context''s providers share. Not measured: every step
+    is a core- or extended-tier operation of the common OpenAPI, so the workflow runs against any provider that
+    implements those operations (see crosswalk/).'
+sourceDescriptions:
+- name: fundraising
+  url: ./openapi.yml
+  type: openapi
+workflows:
+- workflowId: record-a-gift
+  summary: Add a donor and record a donation to a campaign
+  description: Add a donor and record a donation to a campaign.
+  inputs:
+    type: object
+    required:
+    - campaign_id
+    properties:
+      campaign_id:
+        type: string
+  steps:
+  - stepId: campaign
+    operationId: getFundraisingCampaign
+    description: Get a fundraising campaign -- a core-tier operation (100% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    parameters:
+    - name: fundraising_campaign_id
+      in: path
+      value: $inputs.campaign_id
+  - stepId: donor
+    operationId: createDonor
+    description: Create a donor -- a core-tier operation (83% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+  - stepId: donation
+    operationId: createDonation
+    description: Create a donation -- a core-tier operation (82% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        donor_id: $steps.donor.outputs.id
+        campaign_id: $steps.campaign.outputs.id
+  x-commons-tiers:
+  - core

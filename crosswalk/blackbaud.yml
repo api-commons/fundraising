@@ -1,0 +1,103 @@
+provider: blackbaud
+apis_io: https://apis.io/providers/blackbaud/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donor:
+    path_segment:
+    - constituents
+    - constituent
+    properties:
+      email: email_address
+      first_name: first_name
+      id:
+      - id
+      - constituent_id
+      last_name: last_name
+      created_at: date_added
+      phone: phone_number
+      gender: gender
+      name: title
+      organization_id: organization_id
+    core_coverage: 0.818
+    evidence:
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#DELETE /constituents/{constituent_id}
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#POST /constituents
+    - openapi/_original/blackbaud-crm-constituent-api-openapi.yml#DELETE /constituents/{constituent_id}
+    - openapi/_original/blackbaud-crm-constituent-api-openapi.yml#POST /constituents
+    - openapi/_original/blackbaud-gift-aid-api-openapi.yml#GET /v1/taxdeclarations/constituents/{constituent_id}
+  donation:
+    path_segment:
+    - gifts
+    - gift
+    properties:
+      id:
+      - id
+      - constituent_id
+      amount: amount
+      metadata: custom_fields
+      created_at: date_added
+      donor_id: constituent
+      type:
+      - type
+      - gift_type
+      status: gift_status
+      anonymous:
+      - is_anonymous
+      - anonymous
+      updated_at: date_modified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/blackbaud-altru-revenue-api-openapi.yml#GET /gifts
+    - openapi/_original/blackbaud-crm-revenue-api-openapi.yml#GET /gifts
+    - openapi/_original/blackbaud-gift-api-openapi.yml#DELETE /gifts/{gift_id}
+    - openapi/_original/blackbaud-gift-api-openapi.yml#GET /gifts
+    - openapi/_original/blackbaud-gift-api-openapi.yml#GET /gifts/{gift_id}
+  fundraising_campaign:
+    path_segment:
+    - appeals
+    - fundraisers
+    - campaigns
+    - fundraiser
+    properties:
+      created_at: date_added
+      id:
+      - id
+      - constituent_id
+      name:
+      - name
+      - full_name
+      goal: goal
+      end_date: end_date
+      updated_at: date_modified
+      start_date: start_date
+    core_coverage: 0.778
+    evidence:
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#DELETE /fundraisers/{fundraiser_date_range_id}
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#GET /constituentappeals/{constituent_id}/appeals
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#GET /fundraisers/{fundraiser_date_range_id}
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#PATCH /fundraisers/{fundraiser_date_range_id}
+    - openapi/_original/blackbaud-altru-constituent-api-openapi.yml#POST /fundraisers
+  fund:
+    path_segment:
+    - funds
+    - fund
+    properties:
+      id:
+      - id
+      - record_id
+      - constituent_id
+      name: name
+      created_at: date_added
+      updated_at: date_modified
+      campaign_id:
+      - campaign
+      - campaign_id
+      description: description
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/blackbaud-fundraising-api-openapi.yml#GET /funds
+    - openapi/_original/blackbaud-fundraising-api-openapi.yml#GET /funds/{fund_id}
+    - openapi/_original/blackbaud-general-ledger-api-openapi.yml#GET /accounts/funds
+    - openapi/_original/blackbaud-general-ledger-api-openapi.yml#GET /funds/{fund_id}
+    - openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#DELETE /v1/re/funds/{id}

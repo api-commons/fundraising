@@ -1,0 +1,62 @@
+provider: overflow
+apis_io: https://apis.io/providers/overflow/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donor:
+    path_segment:
+    - donors
+    properties:
+      email: email
+      first_name: firstName
+      id: id
+      last_name: lastName
+      created_at: createdAt
+      phone: phone
+      address: address
+      updated_at: updatedAt
+    core_coverage: 0.727
+    evidence:
+    - openapi/_original/overflow-openapi-original.json#GET /api/v3/donors
+    - openapi/_original/overflow-openapi-original.json#GET /api/v3/donors/{donorId}
+    - openapi/_original/overflow-openapi-original.json#PATCH /api/v3/donors/{donorId}
+    - openapi/_original/overflow-openapi-original.json#POST /api/v3/donors
+  donation:
+    path_segment:
+    - contributions
+    properties:
+      id: id
+      amount: amount
+      metadata: metadata
+      created_at: createdAt
+      donor_id:
+      - donor
+      - donorId
+      type: type
+      campaign_id:
+      - campaign
+      - campaignId
+      status: status
+      anonymous: anonymous
+      updated_at: updatedAt
+      payment_method: paymentMethod
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/overflow-openapi-original.json#GET /api/v3/contributions
+    - openapi/_original/overflow-openapi-original.json#GET /api/v3/contributions/{contributionId}
+    - openapi/_original/overflow-openapi-original.json#POST /api/v3/contributions
+  fundraising_campaign:
+    path_segment:
+    - campaigns
+    properties:
+      created_at: createdAt
+      id: id
+      name: name
+      end_date: endDate
+      status: status
+      updated_at: updatedAt
+      start_date: startDate
+    core_coverage: 0.778
+    evidence:
+    - openapi/_original/overflow-openapi-original.json#GET /api/v3/campaigns
+    - openapi/_original/overflow-openapi-original.json#GET /api/v3/campaigns/{campaignId}

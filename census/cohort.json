@@ -1,0 +1,384 @@
+[
+ {
+  "slug": "almabase",
+  "specs": [
+   "openapi/_original/almabase-developer-portal-api-list.json",
+   "openapi/_original/almabase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apiaddicts",
+  "specs": [
+   "openapi/_original/apiaddicts-apigen-openapi.yml",
+   "openapi/_original/apiaddicts-openapi2soapui-openapi.yml",
+   "openapi/_original/apigen-springboot-api.yaml",
+   "openapi/_original/openapi2soapui-api.yaml"
+  ]
+ },
+ {
+  "slug": "arc-prize-foundation",
+  "specs": [
+   "openapi/_original/arc-prize-foundation-arc-agi-3-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "blackbaud",
+  "specs": [
+   "openapi/_original/blackbaud-accounts-payable-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-administration-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-analysis-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-constituent-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-event-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-fundraising-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-marketing-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-prospect-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-revenue-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-sales-api-openapi.yml",
+   "openapi/_original/blackbaud-altru-volunteer-api-openapi.yml",
+   "openapi/_original/blackbaud-billing-management-api-openapi.yml",
+   "openapi/_original/blackbaud-code-table-api-openapi.yml",
+   "openapi/_original/blackbaud-communication-preference-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-administration-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-analysis-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-constituent-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-event-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-fundraising-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-marketing-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-prospect-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-revenue-api-openapi.yml",
+   "openapi/_original/blackbaud-crm-volunteer-api-openapi.yml",
+   "openapi/_original/blackbaud-csrconnect-api-openapi.yml",
+   "openapi/_original/blackbaud-custom-field-api-openapi.yml",
+   "openapi/_original/blackbaud-donation-forms-api-openapi.yml",
+   "openapi/_original/blackbaud-education-core-api-openapi.yml",
+   "openapi/_original/blackbaud-enrollment-management-api-openapi.yml",
+   "openapi/_original/blackbaud-fixed-assets-api-openapi.yml",
+   "openapi/_original/blackbaud-fundraising-api-openapi.yml",
+   "openapi/_original/blackbaud-general-ledger-api-openapi.yml",
+   "openapi/_original/blackbaud-gift-aid-api-openapi.yml",
+   "openapi/_original/blackbaud-gift-api-openapi.yml",
+   "openapi/_original/blackbaud-gift-batch-api-openapi.yml",
+   "openapi/_original/blackbaud-gift-v2-api-openapi.yml",
+   "openapi/_original/blackbaud-grantmaking-api-openapi.yml",
+   "openapi/_original/blackbaud-grantsconnect-api-openapi.yml",
+   "openapi/_original/blackbaud-import-api-openapi.yml",
+   "openapi/_original/blackbaud-list-api-openapi.yml",
+   "openapi/_original/blackbaud-list-management-api-openapi.yml",
+   "openapi/_original/blackbaud-lists-v2-api-openapi.yml",
+   "openapi/_original/blackbaud-membership-api-openapi.yml",
+   "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml",
+   "openapi/_original/blackbaud-oneroster-api-openapi.yml",
+   "openapi/_original/blackbaud-opportunity-api-openapi.yml",
+   "openapi/_original/blackbaud-query-api-openapi.yml",
+   "openapi/_original/blackbaud-receivables-api-openapi.yml",
+   "openapi/_original/blackbaud-school-api-openapi.yml",
+   "openapi/_original/blackbaud-standard-reports-api-openapi.yml",
+   "openapi/_original/blackbaud-statistical-unit-api-openapi.yml",
+   "openapi/_original/blackbaud-treasury-api-openapi.yml",
+   "openapi/_original/blackbaud-webhook-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bloomerang",
+  "specs": [
+   "openapi/_original/bloomerang-openapi.json"
+  ]
+ },
+ {
+  "slug": "bonterra-fka-everyaction",
+  "specs": [
+   "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml",
+   "openapi/_original/bonterra-fka-everyaction-everyaction-8-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "breeze-chms",
+  "specs": [
+   "openapi/_original/breeze-chms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "broad-institute",
+  "specs": [
+   "openapi/_original/broad-institute-openapi.yml"
+  ]
+ },
+ {
+  "slug": "buymeacoffee",
+  "specs": [
+   "openapi/_original/buymeacoffee-openapi.json"
+  ]
+ },
+ {
+  "slug": "candid",
+  "specs": [
+   "openapi/_original/candid-openapi.json"
+  ]
+ },
+ {
+  "slug": "cdisc",
+  "specs": [
+   "openapi/_original/cdisc-library-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chariot",
+  "specs": [
+   "openapi/_original/chariot-fdx-openapi-original.yml",
+   "openapi/_original/chariot-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "charityapi",
+  "specs": [
+   "openapi/_original/charityapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "charitysense-com",
+  "specs": [
+   "openapi/_original/charitysense-com-openapi-original.json",
+   "openapi/_original/charitysense-com-openapi-original.yaml",
+   "openapi/_original/charitysense-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "classy-org",
+  "specs": [
+   "openapi/_original/classy-org-openapi.yml"
+  ]
+ },
+ {
+  "slug": "codeberg",
+  "specs": [
+   "openapi/_original/codeberg-openapi.json"
+  ]
+ },
+ {
+  "slug": "democracy-works",
+  "specs": [
+   "openapi/_original/democracy-works-api-v1-openapi.json",
+   "openapi/_original/democracy-works-api-v2-openapi.json",
+   "openapi/_original/openapi-spec.yml"
+  ]
+ },
+ {
+  "slug": "donately",
+  "specs": [
+   "openapi/_original/donately-openapi.yml"
+  ]
+ },
+ {
+  "slug": "donorbox",
+  "specs": [
+   "openapi/_original/donorbox-openapi.json"
+  ]
+ },
+ {
+  "slug": "fourthwall",
+  "specs": [
+   "openapi/_original/fourthwall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fundmomentum",
+  "specs": [
+   "openapi/_original/fundmomentum-openapi.json"
+  ]
+ },
+ {
+  "slug": "fundraiseup",
+  "specs": [
+   "openapi/_original/fundraiseup-openapi.json"
+  ]
+ },
+ {
+  "slug": "givebutter",
+  "specs": [
+   "openapi/_original/givebutter-docs-api.json"
+  ]
+ },
+ {
+  "slug": "gofundme",
+  "specs": [
+   "openapi/_original/gofundme-pro-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "goodstack",
+  "specs": [
+   "openapi/_original/goodstack-openapi.json"
+  ]
+ },
+ {
+  "slug": "hpsf",
+  "specs": [
+   "openapi/_original/hpsf-tec-v1-openapi.json",
+   "openapi/_original/hpsf-tribe-events-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "iab-tech-lab",
+  "specs": [
+   "openapi/_original/iab-tech-lab-agentic-advertising-api-openapi.yaml",
+   "openapi/_original/iab-tech-lab-buyer-agent-openapi.json",
+   "openapi/_original/iab-tech-lab-buyer-agent-openapi_2.json",
+   "openapi/_original/iab-tech-lab-opendirect-1-5-1-swagger.yaml",
+   "openapi/_original/iab-tech-lab-opendirect-1-5-1-swagger_2.yaml",
+   "openapi/_original/iab-tech-lab-seller-agent-openapi.json",
+   "openapi/_original/iab-tech-lab-seller-agent-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "indiegogo",
+  "specs": [
+   "openapi/_original/indiegogo-public-openapi.yml"
+  ]
+ },
+ {
+  "slug": "internet2",
+  "specs": [
+   "openapi/_original/comanage-registry-restapiv1.yml",
+   "openapi/_original/internet2-coreapi-openapi.yml",
+   "openapi/_original/internet2-restapiv1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "koko",
+  "specs": [
+   "openapi/_original/koko-crisis-helplines-openapi.yml"
+  ]
+ },
+ {
+  "slug": "leo",
+  "specs": [
+   "openapi/_original/leo-openapi.json"
+  ]
+ },
+ {
+  "slug": "levitate",
+  "specs": [
+   "openapi/_original/levitate-public-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "lichess",
+  "specs": [
+   "openapi/_original/lichess-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lightning-social-ventures",
+  "specs": [
+   "openapi/_original/lightning-social-ventures-lightning-reach-openapi.json"
+  ]
+ },
+ {
+  "slug": "liquidonate",
+  "specs": [
+   "openapi/_original/liquidonate-magicmatch-openapi.yml",
+   "openapi/_original/liquidonate-returnsdirect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "memberclicks",
+  "specs": [
+   "openapi/_original/memberclicks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "movehome-org",
+  "specs": [
+   "openapi/_original/movehome-org-raia-portal-feed-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "nationbuilder",
+  "specs": [
+   "openapi/_original/nationbuilder-v2-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "neonone",
+  "specs": [
+   "openapi/_original/neonone-openapi.yml"
+  ]
+ },
+ {
+  "slug": "overflow",
+  "specs": [
+   "openapi/_original/overflow-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "planning-center",
+  "specs": [
+   "openapi/_original/planning-center-openapi.yml"
+  ]
+ },
+ {
+  "slug": "plinth-us-grants-data",
+  "specs": [
+   "openapi/_original/plinth-us-grants-data-openapi.json"
+  ]
+ },
+ {
+  "slug": "publiq",
+  "specs": [
+   "openapi/_original/museumpassmusees-partner-api.json",
+   "openapi/_original/publiq-museumpassmusees-partner-openapi.yml",
+   "openapi/_original/publiq-uitdatabank-entry-openapi.yml",
+   "openapi/_original/publiq-uitdatabank-search-openapi.yml",
+   "openapi/_original/publiq-uitdatabank-taxonomy-openapi.yml",
+   "openapi/_original/publiq-uitpas-openapi.yml",
+   "openapi/_original/uitdatabank-entry.json",
+   "openapi/_original/uitdatabank-search.json",
+   "openapi/_original/uitdatabank-taxonomy.json",
+   "openapi/_original/uitpas-uitpas.json"
+  ]
+ },
+ {
+  "slug": "radiant-earth",
+  "specs": [
+   "openapi/_original/radiant-earth-source-cooperative-openapi.json",
+   "openapi/_original/radiant-earth-source-cooperative-openapi.yml"
+  ]
+ },
+ {
+  "slug": "runsignup",
+  "specs": [
+   "openapi/_original/runsignup-openapi.yml"
+  ]
+ },
+ {
+  "slug": "streamelements",
+  "specs": [
+   "openapi/_original/streamelements-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "submittable",
+  "specs": [
+   "openapi/_original/submittable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wefunder",
+  "specs": [
+   "openapi/_original/wefunder-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "wikipedia",
+  "specs": [
+   "openapi/_original/wikipedia-rest-v1-openapi.yaml",
+   "openapi/_original/wikipedia-wikimedia-enterprise-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "wikisource",
+  "specs": [
+   "openapi/_original/wikimedia-rest-api-v1-openapi.json"
+  ]
+ }
+]

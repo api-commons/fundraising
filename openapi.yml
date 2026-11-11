@@ -1,0 +1,397 @@
+openapi: 3.1.0
+info:
+  title: Nonprofit Fundraising (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Nonprofit Fundraising interface, distilled from the harvested OpenAPI of 50 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /donors/{donor_id}:
+    parameters:
+    - $ref: '#/components/parameters/donor_id'
+    get:
+      operationId: getDonor
+      summary: Get a donor
+      tags:
+      - Donors
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/Donor'
+    patch:
+      operationId: updateDonor
+      summary: Update a donor
+      tags:
+      - Donors
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deleteDonor
+      summary: Delete a donor
+      tags:
+      - Donors
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /donors:
+    get:
+      operationId: listDonors
+      summary: List donors
+      tags:
+      - Donors
+      x-commons-tier: core
+      x-commons-share: 0.833
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDonor
+      summary: Create a donor
+      tags:
+      - Donors
+      x-commons-tier: core
+      x-commons-share: 0.833
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /donations/{donation_id}:
+    parameters:
+    - $ref: '#/components/parameters/donation_id'
+    get:
+      operationId: getDonation
+      summary: Get a donation
+      tags:
+      - Donations
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id002
+                $ref: '#/components/schemas/Donation'
+    patch:
+      operationId: updateDonation
+      summary: Update a donation
+      tags:
+      - Donations
+      x-commons-tier: extended
+      x-commons-share: 0.364
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    delete:
+      operationId: deleteDonation
+      summary: Delete a donation
+      tags:
+      - Donations
+      x-commons-tier: extended
+      x-commons-share: 0.273
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /donations:
+    get:
+      operationId: listDonations
+      summary: List donations
+      tags:
+      - Donations
+      x-commons-tier: core
+      x-commons-share: 0.909
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id002
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDonation
+      summary: Create a donation
+      tags:
+      - Donations
+      x-commons-tier: core
+      x-commons-share: 0.818
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /fundraising-campaigns:
+    get:
+      operationId: listFundraisingCampaigns
+      summary: List fundraising campaigns
+      tags:
+      - Fundraising Campaigns
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/FundraisingCampaign'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFundraisingCampaign
+      summary: Create a fundraising campaign
+      tags:
+      - Fundraising Campaigns
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /fundraising-campaigns/{fundraising_campaign_id}:
+    parameters:
+    - $ref: '#/components/parameters/fundraising_campaign_id'
+    get:
+      operationId: getFundraisingCampaign
+      summary: Get a fundraising campaign
+      tags:
+      - Fundraising Campaigns
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateFundraisingCampaign
+      summary: Update a fundraising campaign
+      tags:
+      - Fundraising Campaigns
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /funds:
+    get:
+      operationId: listFunds
+      summary: List funds
+      tags:
+      - Funds
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Fund'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFund
+      summary: Create a fund
+      tags:
+      - Funds
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /funds/{fund_id}:
+    parameters:
+    - $ref: '#/components/parameters/fund_id'
+    get:
+      operationId: getFund
+      summary: Get a fund
+      tags:
+      - Funds
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateFund
+      summary: Update a fund
+      tags:
+      - Funds
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+    delete:
+      operationId: deleteFund
+      summary: Delete a fund
+      tags:
+      - Funds
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+components:
+  schemas:
+    Donor:
+      $ref: ./schema/donor.json
+    Donation:
+      $ref: ./schema/donation.json
+    FundraisingCampaign:
+      $ref: ./schema/fundraising_campaign.json
+    Fund:
+      $ref: ./schema/fund.json
+  parameters:
+    donor_id:
+      name: donor_id
+      in: path
+      required: true
+      schema:
+        type: string
+    donation_id:
+      name: donation_id
+      in: path
+      required: true
+      schema:
+        type: string
+    fundraising_campaign_id:
+      name: fundraising_campaign_id
+      in: path
+      required: true
+      schema:
+        type: string
+    fund_id:
+      name: fund_id
+      in: path
+      required: true
+      schema:
+        type: string

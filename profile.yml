@@ -1,0 +1,682 @@
+context: fundraising
+name: Nonprofit Fundraising
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Non-Profit
+  - Nonprofit
+  - Fundraising
+  - Donations
+  - Philanthropy
+  - Charity
+  - Donor Management
+  - Giving
+  providers_with_harvested_openapi: 50
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  donor:
+    segments_seen:
+      supporters: 3
+      constituents: 2
+      constituent: 2
+      donors: 2
+    providers_exposing: 6
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET item
+      providers: 6
+      share: 1.0
+      tier: core
+    - operation: GET collection
+      providers: 5
+      share: 0.833
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.833
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: DELETE item
+      providers: 3
+      share: 0.5
+      tier: core
+    - operation: POST item
+      providers: 2
+      share: 0.333
+      tier: long-tail
+    properties:
+    - name: email
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - email_address
+      - email
+      - PrimaryEmail
+    - name: first_name
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - first_name
+      - FirstName
+      - firstName
+    - name: id
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - constituent_id
+      - Id
+    - name: last_name
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - last_name
+      - LastName
+      - lastName
+    - name: created_at
+      tier: core
+      providers: 5
+      share: 0.833
+      type: string
+      spellings:
+      - created_at
+      - date_added
+      - createdAt
+    - name: phone
+      tier: core
+      providers: 5
+      share: 0.833
+      type: string
+      spellings:
+      - phone
+      - phone_number
+    - name: address
+      tier: core
+      providers: 3
+      share: 0.5
+      type: object
+      spellings:
+      - address
+      - PrimaryAddress
+    - name: gender
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - gender
+      - Gender
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - title
+      - FullName
+    - name: organization_id
+      tier: core
+      providers: 3
+      share: 0.5
+      type: integer
+      spellings:
+      - organization_id
+    - name: updated_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+    long_tail_count: 328
+    long_tail_sample:
+    - account_number
+    - campaign_id
+    - employer
+    - first_page_url
+    - from
+    - fund_id
+    - last_page
+    - last_page_url
+    - member_id
+    - middle_name
+    - next_page_url
+    - path
+    - prev_page_url
+    - status
+    - suffix
+    - to
+    - account
+    - account_type
+    - acknowledgements_count
+    - active_recurring_count
+    - added_by_id
+    - address1
+    - address2
+    - address_block
+    - address_cart
+    - address_certification_data
+    - address_city
+    - address_congressional_district
+    - address_country
+    - address_county
+    - address_do_not_mail
+    - address_do_not_mail_reason
+    - address_dpc
+    - address_ids
+    - address_info_source
+    - address_last_validation_attempt_date
+    - address_lot
+    - address_omit_from_validation
+    - address_post_code
+    - address_state
+  donation:
+    segments_seen:
+      donations: 7
+      gifts: 2
+      contributions: 2
+      gift: 1
+    providers_exposing: 11
+    providers_with_readable_schema: 11
+    operations:
+    - operation: GET item
+      providers: 11
+      share: 1.0
+      tier: core
+    - operation: GET collection
+      providers: 10
+      share: 0.909
+      tier: core
+    - operation: POST collection
+      providers: 9
+      share: 0.818
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.364
+      tier: extended
+    - operation: DELETE item
+      providers: 3
+      share: 0.273
+      tier: extended
+    - operation: POST item
+      providers: 1
+      share: 0.091
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.091
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 8
+      share: 0.727
+      type: string
+      spellings:
+      - id
+      - constituent_id
+    - name: amount
+      tier: core
+      providers: 7
+      share: 0.636
+      type: number
+      spellings:
+      - amount
+    - name: metadata
+      tier: core
+      providers: 7
+      share: 0.636
+      type: array
+      spellings:
+      - custom_fields
+      - metadata
+      - attributes
+      - properties
+    - name: created_at
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - date_added
+    - name: donor_id
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - accountId
+      - constituent
+      - account_id
+      - supporter
+      - donor
+      - donorId
+    - name: type
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - type
+      - gift_type
+      - donation_type
+    - name: campaign_id
+      tier: extended
+      providers: 5
+      share: 0.455
+      type: string
+      spellings:
+      - campaign
+      - campaign_id
+      - fundraiserId
+      - campaignId
+    - name: status
+      tier: extended
+      providers: 5
+      share: 0.455
+      type: string
+      spellings:
+      - status
+      - gift_status
+    - name: anonymous
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: boolean
+      spellings:
+      - anonymous
+      - is_anonymous
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - updatedAt
+      - date_modified
+      - updated_at
+      - updated
+    - name: currency
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - currency
+      - currencyCode
+    - name: fund_id
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: object
+      spellings:
+      - designation
+      - fund
+    - name: payment_method
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: object
+      spellings:
+      - paymentType
+      - payment_method
+      - paymentMethod
+    long_tail_count: 166
+    long_tail_sample:
+    - batch_number
+    - date
+    - email
+    - first_name
+    - last_name
+    - purpose
+    - relationships
+    - source
+    - tribute
+    - account
+    - acknowledge
+    - acknowledgements
+    - adjustment_notes
+    - amount_before_fees_covered
+    - amount_before_fees_covered_in_default_currency
+    - amount_fee
+    - amount_gross
+    - amount_in_cents
+    - amount_in_default_currency
+    - amount_net
+    - apply_payments
+    - approved_gift_id
+    - artifacts
+    - attribution
+    - balance
+    - batch_id
+    - batch_prefix
+    - benefit
+    - canceled_at
+    - cancelled_at
+    - category
+    - charge_first_payment
+    - codes
+    - comment
+    - comments
+    - completed_at
+    - consent
+    - consented_to_be_contacted
+    - consented_to_be_contacted_by_org
+    - constituency
+  fundraising_campaign:
+    segments_seen:
+      campaigns: 6
+      appeals: 2
+      fundraisers: 2
+      fundraiser: 1
+      campaign: 1
+      appeal: 1
+    providers_exposing: 6
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 6
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: DELETE item
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    properties:
+    - name: created_at
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - created_at
+      - date_added
+      - CreatedDate
+      - createdAt
+    - name: id
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - constituent_id
+      - Id
+      - external_id
+    - name: name
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - name
+      - full_name
+      - Name
+    - name: goal
+      tier: core
+      providers: 5
+      share: 0.833
+      type: number
+      spellings:
+      - goal
+      - Goal
+    - name: end_date
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - end_date
+      - EndDate
+      - endDate
+    - name: status
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - status
+      - state
+    - name: updated_at
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - updated_at
+      - date_modified
+      - updatedAt
+    - name: currency
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - currency_code
+      - currency
+    - name: start_date
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - start_date
+      - Start
+      - StartDate
+      - startDate
+    long_tail_count: 176
+    long_tail_sample:
+    - description
+    - ended_at
+    - first_page_url
+    - from
+    - fund_id
+    - is_active
+    - last_page
+    - last_page_url
+    - next_page_url
+    - organization_id
+    - path
+    - prev_page_url
+    - started_at
+    - to
+    - type
+    - account
+    - add_registration_fee
+    - address1
+    - allow_duplicate_fundraisers
+    - allow_ecards
+    - allow_fundraising_pages
+    - allow_team_fundraising
+    - amount
+    - appeal_category
+    - appeal_category_id
+    - appeal_report_1
+    - apply_to_all_campaigns
+    - appuser_base_currency_id
+    - archived_at
+    - base_currency_id
+    - business_unit
+    - business_units
+    - campaign_category
+    - campaign_category_id
+    - campaign_end_date_utc
+    - campaign_id
+    - campaign_name
+    - campaign_page_url
+    - campaign_start_date_utc
+    - campaign_template_id
+  fund:
+    segments_seen:
+      designations: 4
+      funds: 2
+      fund: 2
+      designation: 1
+    providers_exposing: 5
+    providers_with_readable_schema: 5
+    operations:
+    - operation: GET collection
+      providers: 5
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 5
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 1.0
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.8
+      tier: core
+    - operation: DELETE item
+      providers: 3
+      share: 0.6
+      tier: core
+    - operation: POST item
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 5
+      share: 1.0
+      type: integer
+      spellings:
+      - id
+      - record_id
+      - constituent_id
+      - Id
+    - name: name
+      tier: core
+      providers: 5
+      share: 1.0
+      type: string
+      spellings:
+      - name
+      - Name
+    - name: created_at
+      tier: core
+      providers: 4
+      share: 0.8
+      type: string
+      spellings:
+      - created_at
+      - date_added
+    - name: updated_at
+      tier: core
+      providers: 4
+      share: 0.8
+      type: string
+      spellings:
+      - updated_at
+      - date_modified
+    - name: campaign_id
+      tier: core
+      providers: 3
+      share: 0.6
+      type: integer
+      spellings:
+      - campaign_id
+      - campaign
+      - Campaign
+      - Appeal
+    - name: description
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - description
+    - name: is_default
+      tier: core
+      providers: 3
+      share: 0.6
+      type: boolean
+      spellings:
+      - is_default
+      - IsDefault
+    long_tail_count: 109
+    long_tail_sample:
+    - code
+    - end_date
+    - first_page_url
+    - from
+    - goal
+    - is_active
+    - last_page
+    - last_page_url
+    - next_page_url
+    - organization_id
+    - path
+    - prev_page_url
+    - start_date
+    - to
+    - type
+    - account
+    - acknowledgement_interaction_ids
+    - acknowledgement_status
+    - active
+    - added_by
+    - address_block
+    - address_city_state
+    - address_post_code
+    - amount
+    - annotation
+    - attachment_ids
+    - audit_trail
+    - beginning_balance_locked
+    - beginning_balance_locked_date
+    - birth_date
+    - category
+    - city
+    - class
+    - custom_values
+    - date_from
+    - date_to
+    - default
+    - default_appeal
+    - default_appeal_id
+    - default_quickbooks_account_id

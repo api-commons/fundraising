@@ -1,0 +1,15 @@
+provider: almabase
+apis_io: https://apis.io/providers/almabase/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - gifts
+    properties:
+      amount: amount
+      created_at: created_at
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/almabase-openapi.yml#GET /api/v1/eventsx/gifts/
+    - openapi/_original/almabase-openapi.yml#GET /api/v1/eventsx/gifts/{pk}

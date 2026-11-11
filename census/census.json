@@ -1,0 +1,2495 @@
+{
+ "cohort_size": 50,
+ "unreadable": [],
+ "concepts": {
+  "donor": {
+   "blackbaud": {
+    "segments": [
+     "constituents",
+     "constituent"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "last_name": "string",
+     "first_name": "string",
+     "middle_name": "string",
+     "title": "string",
+     "suffix": "string",
+     "nick_name": "string",
+     "maiden_name": "string",
+     "birth_date": "object",
+     "gender": "string",
+     "marital_status": "string",
+     "address_type": "string",
+     "address_country": "string",
+     "address_block": "string",
+     "address_city": "string",
+     "address_state": "string",
+     "address_post_code": "string",
+     "address_do_not_mail": "boolean",
+     "address_do_not_mail_reason": "string",
+     "phone_type": "string",
+     "phone_number": "string",
+     "email_address_type": "string",
+     "email_address": "string",
+     "skip_adding_security_groups": "boolean",
+     "existing_spouse": "boolean",
+     "spouse_id": "string",
+     "spouse_last_name": "string",
+     "spouse_first_name": "string",
+     "spouse_middle_name": "string",
+     "spouse_title": "string",
+     "spouse_suffix": "string",
+     "spouse_nick_name": "string",
+     "spouse_maiden_name": "string",
+     "spouse_birth_date": "object",
+     "spouse_gender": "string",
+     "spouse_relationship_type_code": "string",
+     "spouse_reciprocal_type_code": "string",
+     "spouse_start_date": "string",
+     "copy_primary_information": "boolean",
+     "primary_soft_credit_relationship_exists": "boolean",
+     "primary_soft_credit_match_factor": "number",
+     "reciprocal_soft_credit_relationship_exists": "boolean",
+     "reciprocal_soft_credit_match_factor": "number",
+     "existing_organization": "boolean",
+     "organization_id": "string",
+     "organization_name": "string",
+     "organization_address_type": "string",
+     "organization_country": "string",
+     "organization_address_block": "string",
+     "organization_city": "string",
+     "organization_state": "string",
+     "organization_post_code": "string",
+     "organization_do_not_mail": "boolean",
+     "organization_do_not_mail_reason": "string",
+     "organization_phone_type": "string",
+     "organization_number": "string",
+     "organization_relationship_type_code": "string",
+     "organization_reciprocal_type_code": "string",
+     "organization_start_date": "string",
+     "organization_end_date": "string",
+     "contact": "boolean",
+     "contact_type": "string",
+     "primary_contact": "boolean",
+     "position": "string",
+     "matching_gift_relationship": "boolean",
+     "reciprocal_recognition_type": "string",
+     "primary_recognition_type": "string",
+     "address_omit_from_validation": "boolean",
+     "address_dpc": "string",
+     "address_cart": "string",
+     "address_lot": "string",
+     "address_county": "string",
+     "address_congressional_district": "string",
+     "address_last_validation_attempt_date": "string",
+     "address_validation_message": "string",
+     "address_certification_data": "integer",
+     "organization_omit_from_validation": "boolean",
+     "organization_dpc": "string",
+     "organization_cart": "string",
+     "organization_lot": "string",
+     "organization_county": "string",
+     "organization_congressional_district": "string",
+     "organization_last_validation_attempt_date": "string",
+     "organization_validation_message": "string",
+     "organization_certification_data": "integer",
+     "validation_countries": "array",
+     "zip_lookup_countries": "array",
+     "spouse_relationship": "boolean",
+     "house_hold_copy_primary_contact_info": "boolean",
+     "job_category": "string",
+     "career_level": "string",
+     "address_info_source": "string",
+     "organization_info_source": "string",
+     "title_2": "string",
+     "suffix_2": "string",
+     "spouse_title_2": "string",
+     "spouse_suffix_2": "string",
+     "skip_adding_sites": "boolean",
+     "constituent_type": "integer",
+     "organization_primary_soft_credit_relationship_exists": "boolean",
+     "organization_primary_soft_credit_match_factor": "number",
+     "organization_reciprocal_soft_credit_relationship_exists": "boolean",
+     "organization_reciprocal_soft_credit_match_factor": "number",
+     "organization_primary_recognition_type": "string",
+     "organization_reciprocal_recognition_type": "string",
+     "opt_out_ads": "boolean",
+     "opt_out_sale": "boolean",
+     "gpc": "boolean",
+     "gender_code": "string",
+     "spouse_gender_code": "string",
+     "declaration_id": "string",
+     "sequence": "integer",
+     "constituent_id": "string",
+     "constituent_pays_tax": "string",
+     "declaration_made_date": "string",
+     "confirmation_sent_date": "string",
+     "confirmation_returned_date": "string",
+     "tax_notes": "string",
+     "declaration_end_date": "string",
+     "declaration_start_date": "string",
+     "tax_payer_status": "integer",
+     "declaration_indicator": "integer",
+     "scanned_docs_exist": "boolean",
+     "declaration_source": "integer",
+     "declaration_source_text": "string",
+     "declaration_indicator_text": "string",
+     "tax_payer_status_text": "string",
+     "fund_category": "string",
+     "fund_type": "string",
+     "campaign": "string",
+     "default_appeal": "string",
+     "fund_id": "string",
+     "description": "string",
+     "fund_category_id": "integer",
+     "fund_type_id": "integer",
+     "campaign_id": "integer",
+     "start_date": "string",
+     "end_date": "string",
+     "inactive": "boolean",
+     "default_appeal_id": "integer",
+     "notes": "string",
+     "goal": "number",
+     "restricted": "boolean",
+     "import_id": "string",
+     "system_record_id": "integer",
+     "relation_id": "integer",
+     "relation_description": "string",
+     "relationship_type": "string",
+     "reciprocal_relationship_type": "string",
+     "date_from": "string",
+     "date_to": "string",
+     "tribute_type_id": "integer",
+     "tribute_type_name": "string",
+     "is_active": "boolean",
+     "constituent_record_id": "integer",
+     "last_changed_by_id": "integer",
+     "date_added": "string",
+     "date_changed": "string",
+     "added_by_id": "integer",
+     "default_fund_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#DELETE /constituents/{constituent_id}",
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#POST /constituents",
+     "openapi/_original/blackbaud-crm-constituent-api-openapi.yml#DELETE /constituents/{constituent_id}",
+     "openapi/_original/blackbaud-crm-constituent-api-openapi.yml#POST /constituents",
+     "openapi/_original/blackbaud-gift-aid-api-openapi.yml#GET /v1/taxdeclarations/constituents/{constituent_id}",
+     "openapi/_original/blackbaud-gift-aid-api-openapi.yml#POST /v1/taxdeclarations/constituents/{constituent_id}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#DELETE /v1/re/constituents/{id}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/funds/constituent/{constituentId}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/importidmap/constituent/{importid}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/relationships/funds/constituent/{constituentId}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/tribute/constituent/{constituentId}"
+    ]
+   },
+   "bloomerang": {
+    "segments": [
+     "constituent",
+     "constituents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "Total": "integer",
+     "TotalFiltered": "integer",
+     "Start": "integer",
+     "ResultCount": "integer",
+     "MembershipScheduleId": "integer",
+     "MembershipProgramName": "string",
+     "MembershipLevelName": "string",
+     "MembershipStatus": "string",
+     "MembershipRenewalDate": "string",
+     "Id": "integer",
+     "AccountNumber": "integer",
+     "IsInHousehold": "boolean",
+     "IsHeadOfHousehold": "boolean",
+     "IsFavorite": "boolean",
+     "FullCustomProfileImageId": "integer",
+     "FullCustomProfileImageUrl": "string",
+     "CroppedCustomProfileImageId": "integer",
+     "CroppedCustomProfileImageUrl": "string",
+     "Type": "string",
+     "Status": "string",
+     "FirstName": "string",
+     "LastName": "string",
+     "MiddleName": "string",
+     "Prefix": "string",
+     "Suffix": "string",
+     "FullName": "string",
+     "InformalName": "string",
+     "FormalName": "string",
+     "EnvelopeName": "string",
+     "RecognitionName": "string",
+     "JobTitle": "string",
+     "Employer": "string",
+     "Website": "string",
+     "FacebookId": "string",
+     "TwitterId": "string",
+     "LinkedInId": "string",
+     "Gender": "string",
+     "Birthdate": "string",
+     "ProfilePictureType": "string",
+     "HouseholdId": "integer",
+     "PreferredCommunicationChannel": "string",
+     "CommunicationRestrictions": "array",
+     "CommunicationRestrictionsUpdateReason": "string",
+     "EmailInterestType": "string",
+     "CustomEmailInterests": "array",
+     "EmailInterestsUpdateReason": "string",
+     "PrimaryAddress": null,
+     "PrimaryEmail": null,
+     "PrimaryPhone": "object",
+     "EngagementScore": "string",
+     "EngagementScoreLabel": "string",
+     "DonorSearchInfo": "object",
+     "AddressIds": "array",
+     "EmailIds": "array",
+     "PhoneIds": "array",
+     "CustomValues": "array",
+     "AuditTrail": "object",
+     "SecondaryAddresses": "array",
+     "SecondaryEmails": "array",
+     "SecondaryPhones": "array",
+     "FullCustomProfileImage": "array",
+     "CroppedCustomProfileImage": "array",
+     "CustomEmailInterestIds": "array",
+     "Deleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/bloomerang-openapi.json#DELETE /constituent/{id}",
+     "openapi/_original/bloomerang-openapi.json#GET /constituent/{id}",
+     "openapi/_original/bloomerang-openapi.json#GET /constituents",
+     "openapi/_original/bloomerang-openapi.json#POST /constituent",
+     "openapi/_original/bloomerang-openapi.json#PUT /constituent/{id}"
+    ]
+   },
+   "classy-org": {
+    "segments": [
+     "supporters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "current_page": "integer",
+     "first_page_url": "string",
+     "from": "integer",
+     "last_page": "integer",
+     "last_page_url": "string",
+     "next_page_url": "string",
+     "path": "string",
+     "per_page": "integer",
+     "prev_page_url": "string",
+     "to": "integer",
+     "total": "integer",
+     "first_name": "string",
+     "last_name": "string",
+     "email_address": "string",
+     "phone": "string",
+     "id": "integer",
+     "organization_id": "integer",
+     "member_id": "integer",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/classy-org-openapi.yml#GET /organizations/{id}/supporters",
+     "openapi/_original/classy-org-openapi.yml#GET /supporters/{id}",
+     "openapi/_original/classy-org-openapi.yml#POST /organizations/{id}/supporters",
+     "openapi/_original/classy-org-openapi.yml#PUT /supporters/{id}"
+    ]
+   },
+   "fundraiseup": {
+    "segments": [
+     "supporters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "account": "object",
+     "address": "object",
+     "created_at": "string",
+     "email": "string",
+     "employer": "object",
+     "employment_status": "string",
+     "first_name": "string",
+     "id": "string",
+     "language": "string",
+     "last_name": "string",
+     "livemode": "boolean",
+     "occupation": "string",
+     "phone": "string",
+     "title": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/supporters",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/supporters/{id}",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/donor_portal/access_links/supporters/{id}"
+    ]
+   },
+   "gofundme": {
+    "segments": [
+     "supporters",
+     "donors"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "current_page": "integer",
+     "data": "array",
+     "first_page_url": "string",
+     "from": "integer",
+     "last_page": "integer",
+     "last_page_url": "string",
+     "next_page_url": "string",
+     "path": "string",
+     "per_page": "integer",
+     "prev_page_url": "string",
+     "links": "array",
+     "to": "integer",
+     "total": "integer",
+     "address1": "string",
+     "address2": "string",
+     "birthday": "string",
+     "cell_phone": "string",
+     "city": "string",
+     "country": "string",
+     "created_at": "string",
+     "email_address": "string",
+     "first_name": "string",
+     "gender": "string",
+     "id": "integer",
+     "last_emailed_at": "string",
+     "last_name": "string",
+     "location": "string",
+     "member_id": "integer",
+     "metadata": null,
+     "nickname": "string",
+     "opt_in": "boolean",
+     "origin": "string",
+     "phone": "string",
+     "postal_code": "string",
+     "source_campaign_id": "integer",
+     "source_fundraising_page_id": "integer",
+     "source_member_id": "integer",
+     "source_organization_id": "integer",
+     "state": "string",
+     "updated_at": "string",
+     "account_number": "string",
+     "account_type": "string",
+     "acknowledgements_count": "integer",
+     "adjustment_amount": "number",
+     "application_fee_amount": "number",
+     "applied_application_fee_percent": "number",
+     "applied_flex_rate_percent": "number",
+     "applied_fot_percent": "number",
+     "applied_processor_fee_percent": "number",
+     "applied_raw_processor_fee_flat": "number",
+     "billing_address1": "string",
+     "billing_address2": "string",
+     "billing_city": "string",
+     "billing_country": "string",
+     "billing_first_name": "string",
+     "billing_last_name": "string",
+     "billing_postal_code": "string",
+     "billing_state": "string",
+     "browser_info": "string",
+     "campaign_id": "integer",
+     "card_expiration": "string",
+     "card_last_four": "integer",
+     "card_type": "string",
+     "charged_at": "string",
+     "charged_classy_fees_amount": "number",
+     "charged_currency_code": "string",
+     "charged_fees_amount": "number",
+     "charged_pp_fees_amount": "number",
+     "charged_total_gross_amount": "number",
+     "classy_fees_amount": "number",
+     "comment": "string",
+     "company_name": "string",
+     "context": null,
+     "currency_code": "string",
+     "designation_id": "integer",
+     "donation_gross_amount": "number",
+     "donation_matching_plan_id": "integer",
+     "donation_net_amount": "number",
+     "fees_amount": "number",
+     "fee_on_top": "boolean",
+     "flex_rate_amount": "number",
+     "frequency": "string",
+     "fundraising_page_id": "integer",
+     "fundraising_team_id": "integer",
+     "hide_amount": "boolean",
+     "initial_gross_amount": "number",
+     "institution": "string",
+     "in_honor_of": "string",
+     "is_anonymous": "boolean",
+     "is_donor_covered_fee": "boolean",
+     "is_gift_aid": "boolean",
+     "is_reprocess": "boolean",
+     "member_country": "string",
+     "member_email_address": "string",
+     "member_name": "string",
+     "member_phone": "string",
+     "member_cell_phone": "string",
+     "consent": "object",
+     "organization_id": "integer",
+     "overhead_net_amount": "number",
+     "parent_transaction_id": "integer",
+     "payment_gateway": "string",
+     "payment_method": "string",
+     "payment_source": "string",
+     "payment_type": "string",
+     "pp_fees_amount": "number",
+     "pp_reference_id": "string",
+     "pp_response": "string",
+     "pp_transaction_id": "string",
+     "processor_decline_code": "string",
+     "processor_fee_amount": "number",
+     "promo_code_code": "string",
+     "purchased_at": "string",
+     "raw_adjustment_amount": "number",
+     "raw_application_fee_amount": "number",
+     "raw_currency_code": "string",
+     "raw_donation_gross_amount": "number",
+     "raw_flex_rate_amount": "number",
+     "raw_initial_gross_amount": "number",
+     "raw_overhead_net_amount": "number",
+     "raw_processor_fee_amount": "number",
+     "raw_total_gross_amount": "number",
+     "recurring_donation_plan_id": "integer",
+     "refunded_at": "string",
+     "reprocess_attempts": "integer",
+     "status": "string",
+     "supporter_id": "integer",
+     "tax_entity_id": "integer",
+     "total_gross_amount": "number",
+     "utm": "object",
+     "opted_into_payment_sync": "boolean",
+     "feed_item_id": "integer",
+     "amount": "number",
+     "donation_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/gofundme-pro-api-openapi.json#DELETE /supporters/{supporter}",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /campaigns/{campaign}/supporters",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /fundraising-pages/{id}/donors",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /fundraising-teams/{id}/donors",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /organizations/{organization}/supporters",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /supporters/{supporter}",
+     "openapi/_original/gofundme-pro-api-openapi.json#POST /organizations/{organization}/supporters",
+     "openapi/_original/gofundme-pro-api-openapi.json#PUT /supporters/{supporter}"
+    ]
+   },
+   "overflow": {
+    "segments": [
+     "donors"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phone": "string",
+     "address": "object",
+     "activeRecurringCount": "number",
+     "latestContributionDate": "string",
+     "locationIds": "array",
+     "totalContributionsCount": "number",
+     "data": "string",
+     "mailingAddress": "object"
+    },
+    "evidence": [
+     "openapi/_original/overflow-openapi-original.json#GET /api/v3/donors",
+     "openapi/_original/overflow-openapi-original.json#GET /api/v3/donors/{donorId}",
+     "openapi/_original/overflow-openapi-original.json#PATCH /api/v3/donors/{donorId}",
+     "openapi/_original/overflow-openapi-original.json#POST /api/v3/donors"
+    ]
+   }
+  },
+  "donation": {
+   "almabase": {
+    "segments": [
+     "gifts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "created_at": null,
+     "external_database_status": null,
+     "refund_amount": null,
+     "completed_at": null,
+     "amount": null,
+     "external_database_id": null,
+     "payload": null,
+     "external_database_batch_number": null,
+     "is_donation": "boolean",
+     "source": null
+    },
+    "evidence": [
+     "openapi/_original/almabase-openapi.yml#GET /api/v1/eventsx/gifts/",
+     "openapi/_original/almabase-openapi.yml#GET /api/v1/eventsx/gifts/{pk}"
+    ]
+   },
+   "blackbaud": {
+    "segments": [
+     "gifts",
+     "gift"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "count": "integer",
+     "value": "array",
+     "infinity_session": "string",
+     "session_key": "string",
+     "total_available_rows": "integer",
+     "more_rows_range_key": "string",
+     "data_no_longer_available": "boolean",
+     "batch_id": "string",
+     "approved_gift_id": "string",
+     "tributes": "array",
+     "errors": "array",
+     "id": "string",
+     "acknowledgements": "array",
+     "amount": "object",
+     "balance": "object",
+     "batch_number": "string",
+     "constituent_id": "string",
+     "date": "string",
+     "date_added": "string",
+     "date_modified": "string",
+     "fundraisers": "array",
+     "gift_aid_amount": "object",
+     "gift_aid_qualification_status": "string",
+     "gift_code": "string",
+     "gift_splits": "array",
+     "gift_status": "string",
+     "is_anonymous": "boolean",
+     "linked_gifts": "array",
+     "constituency": "string",
+     "lookup_id": "string",
+     "origin": "string",
+     "payments": "array",
+     "post_date": "string",
+     "post_status": "string",
+     "receipts": "array",
+     "recurring_gift_schedule": "object",
+     "recurring_gift_status_date": "object",
+     "reference": "string",
+     "soft_credits": "array",
+     "subtype": "string",
+     "type": "string",
+     "batch_prefix": "string",
+     "default_fundraiser_credits": "boolean",
+     "default_soft_credits": "boolean",
+     "custom_fields": "array",
+     "is_manual": "boolean",
+     "marketing_details": "object",
+     "gift_type": "string",
+     "constituent": "object",
+     "apply_payments": "array",
+     "charge_first_payment": "boolean",
+     "parent_gift_id": "string",
+     "processes_manually": "boolean",
+     "pledge_installments": "array",
+     "gift_date": "string",
+     "vehicle": "string",
+     "comments": "string",
+     "gift_post_status": "string",
+     "gift_post_date": "string",
+     "issuer_details": "object",
+     "schedule": "object",
+     "adjustment_notes": "string",
+     "fundraiser_credits": "array",
+     "send_reminder": "boolean",
+     "gift_subtype": "object",
+     "anonymous": "boolean",
+     "gift_status_date": "object",
+     "gift_constituency": "object",
+     "gift_id": "integer",
+     "tribute_id": "integer",
+     "tribute_type": "integer",
+     "import_id": "string",
+     "acknowledge": "string",
+     "sequence": "integer",
+     "system_record_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/blackbaud-altru-revenue-api-openapi.yml#GET /gifts",
+     "openapi/_original/blackbaud-crm-revenue-api-openapi.yml#GET /gifts",
+     "openapi/_original/blackbaud-gift-api-openapi.yml#DELETE /gifts/{gift_id}",
+     "openapi/_original/blackbaud-gift-api-openapi.yml#GET /gifts",
+     "openapi/_original/blackbaud-gift-api-openapi.yml#GET /gifts/{gift_id}",
+     "openapi/_original/blackbaud-gift-api-openapi.yml#PATCH /gifts/{gift_id}",
+     "openapi/_original/blackbaud-gift-api-openapi.yml#POST /giftbatches/{batch_id}/gifts",
+     "openapi/_original/blackbaud-gift-api-openapi.yml#POST /gifts",
+     "openapi/_original/blackbaud-gift-v2-api-openapi.yml#POST /v2/gifts",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/gifttribute/gift/{giftId}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/importidmap/gift/{importid}"
+    ]
+   },
+   "bonterra-fka-everyaction": {
+    "segments": [
+     "contributions"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "contact": "object",
+     "designation": "object",
+     "dateReceived": "string",
+     "amount": "number",
+     "status": "string",
+     "paymentType": "string",
+     "codes": "array",
+     "generalLedgerFund": "object",
+     "costCenter": "object",
+     "directMarketingCode": "string",
+     "notes": "string",
+     "extendedSourceCode": "object",
+     "financialBatchId": "integer",
+     "pledge": "object",
+     "customFieldValues": "array"
+    },
+    "evidence": [
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /contributions/{alternateIdType}:{alternateId}",
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /contributions/{contributionId}",
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#POST /contributions"
+    ]
+   },
+   "chariot": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "payment_source_id": "string",
+     "amount_gross": "integer",
+     "amount_net": "integer",
+     "amount_fee": "integer",
+     "individual_gift_amount": "integer",
+     "currency": "string",
+     "purpose": "string",
+     "note": "string",
+     "attribution": null,
+     "initiation": null,
+     "settlement": null,
+     "donor_advised_fund_grant": null,
+     "platform": null,
+     "corporate_match": null,
+     "properties": "array",
+     "artifacts": "array",
+     "created_at": "string",
+     "updated_at": "string",
+     "canceled_at": "string",
+     "payment_status": "string"
+    },
+    "evidence": [
+     "openapi/_original/chariot-openapi-original.yml#GET /v1/donations",
+     "openapi/_original/chariot-openapi-original.yml#GET /v1/donations/{id}"
+    ]
+   },
+   "donately": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "data": "array",
+     "summary": "object",
+     "params": "object",
+     "account_id": "string",
+     "amount_in_cents": "integer",
+     "donation_type": "string",
+     "campaign_id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string"
+    },
+    "evidence": [
+     "openapi/_original/donately-openapi.yml#GET /donations",
+     "openapi/_original/donately-openapi.yml#GET /donations/{id}",
+     "openapi/_original/donately-openapi.yml#POST /donations"
+    ]
+   },
+   "fundraiseup": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "account": "object",
+     "amount": "string",
+     "amount_before_fees_covered": "string",
+     "amount_before_fees_covered_in_default_currency": "string",
+     "amount_in_default_currency": "string",
+     "anonymous": "boolean",
+     "benefit": null,
+     "campaign": "object",
+     "comment": "string",
+     "consent": "object",
+     "created_at": "string",
+     "currency": "string",
+     "custom_fields": "array",
+     "designation": "object",
+     "device": "object",
+     "element": "object",
+     "failed_at": "string",
+     "fundraiser": "object",
+     "gift_aid": "object",
+     "id": "string",
+     "installment": "string",
+     "livemode": "boolean",
+     "on_behalf_of": "string",
+     "payment": "object",
+     "payout": "object",
+     "platform_fee": "object",
+     "processing_fee": "object",
+     "questions": "array",
+     "receipt_id": "string",
+     "recurring_plan": "object",
+     "refunded_at": "string",
+     "source": "string",
+     "source_of_funds": "string",
+     "status": "string",
+     "succeeded_at": "string",
+     "supporter": "object",
+     "supporter_covered_fee": "string",
+     "supporter_covered_fee_in_default_currency": "string",
+     "tribute": "object",
+     "url": "string",
+     "utm": "object",
+     "one_time_to_recurring_upgrade_link": "string",
+     "payment_method": "object",
+     "fee_amount": "string",
+     "skip_thank_you_email": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/donations",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/donations/{id}",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/donations",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/donations/{id}",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/upgrade_links/donations/{id}"
+    ]
+   },
+   "goodstack": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "updated": "boolean",
+     "email": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "consentedToBeContactedByOrg": "string",
+     "giftNote": "string",
+     "id": "string",
+     "userId": "string",
+     "organisationId": "string",
+     "amount": "integer",
+     "currencyCode": "string",
+     "createdAt": "string",
+     "status": "string",
+     "consentedToBeContacted": "string",
+     "anonymous": "string",
+     "metadata": "object",
+     "giftAidId": "string",
+     "cancelledAt": "string",
+     "donationRequestId": "string",
+     "accountId": "string",
+     "disbursement": "object",
+     "organisation": "object",
+     "category": "string",
+     "type": "string",
+     "subsidiaryId": "string",
+     "fundraiserId": "string",
+     "updatedAt": "string",
+     "settledAt": "string",
+     "disbursedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/goodstack-openapi.json#GET /v1/donations",
+     "openapi/_original/goodstack-openapi.json#GET /v1/donations/{id}",
+     "openapi/_original/goodstack-openapi.json#GET /v1/giving/donations",
+     "openapi/_original/goodstack-openapi.json#PATCH /v1/donation-sessions/{sessionId}/donations",
+     "openapi/_original/goodstack-openapi.json#PATCH /v1/donations/{id}",
+     "openapi/_original/goodstack-openapi.json#POST /v1/donations"
+    ]
+   },
+   "nationbuilder": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": null,
+     "attributes": null,
+     "relationships": "object",
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/nationbuilder-v2-openapi-original.yml#DELETE /api/v2/donations/{id}",
+     "openapi/_original/nationbuilder-v2-openapi-original.yml#GET /api/v2/donations",
+     "openapi/_original/nationbuilder-v2-openapi-original.yml#GET /api/v2/donations/{id}",
+     "openapi/_original/nationbuilder-v2-openapi-original.yml#PATCH /api/v2/donations/{id}",
+     "openapi/_original/nationbuilder-v2-openapi-original.yml#POST /api/v2/donations"
+    ]
+   },
+   "neonone": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "accountId": "string",
+     "amount": "number",
+     "campaign": "object",
+     "fund": "object",
+     "purpose": "object",
+     "tribute": "object",
+     "solicitor": "array",
+     "id": "string",
+     "batchNumber": "string",
+     "publicRecognitionName": "string"
+    },
+    "evidence": [
+     "openapi/_original/neonone-openapi.yml#DELETE /donations/{id}",
+     "openapi/_original/neonone-openapi.yml#GET /accounts/{id}/donations",
+     "openapi/_original/neonone-openapi.yml#GET /donations/{id}",
+     "openapi/_original/neonone-openapi.yml#PATCH /donations/{id}",
+     "openapi/_original/neonone-openapi.yml#POST /donations",
+     "openapi/_original/neonone-openapi.yml#PUT /donations/{id}"
+    ]
+   },
+   "overflow": {
+    "segments": [
+     "contributions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "type": "string",
+     "amount": "number",
+     "donorCoveredFees": "boolean",
+     "contributionDate": "string",
+     "contributionReceivedAt": "string",
+     "liquidationInitiatedAt": "string",
+     "receivedTokensAt": "string",
+     "status": "string",
+     "stocks": "object",
+     "crypto": "object",
+     "subscriptionId": "string",
+     "frequency": "string",
+     "paymentMethod": "object",
+     "depositId": "string",
+     "campaign": "object",
+     "subcampaign": "object",
+     "dedication": "string",
+     "donorNotes": "string",
+     "anonymous": "boolean",
+     "locationId": "string",
+     "donor": "object",
+     "givingLinkId": "string",
+     "pledgeId": "string",
+     "metadata": "object",
+     "donorId": "string",
+     "paymentMethodId": "string",
+     "campaignId": "string",
+     "subcampaignId": "string"
+    },
+    "evidence": [
+     "openapi/_original/overflow-openapi-original.json#GET /api/v3/contributions",
+     "openapi/_original/overflow-openapi-original.json#GET /api/v3/contributions/{contributionId}",
+     "openapi/_original/overflow-openapi-original.json#POST /api/v3/contributions"
+    ]
+   },
+   "planning-center": {
+    "segments": [
+     "donations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/planning-center-openapi.yml#GET /giving/v2/donations",
+     "openapi/_original/planning-center-openapi.yml#GET /giving/v2/donations/{id}",
+     "openapi/_original/planning-center-openapi.yml#POST /giving/v2/donations"
+    ]
+   }
+  },
+  "fundraising_campaign": {
+   "blackbaud": {
+    "segments": [
+     "appeals",
+     "fundraisers",
+     "campaigns",
+     "fundraiser"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "count": "integer",
+     "value": "array",
+     "infinity_session": "string",
+     "session_key": "string",
+     "total_available_rows": "integer",
+     "more_rows_range_key": "string",
+     "data_no_longer_available": "boolean",
+     "id": "string",
+     "constituent_id": "string",
+     "date_from": "string",
+     "date_to": "string",
+     "appeals": "array",
+     "appuser_base_currency_id": "string",
+     "event_base_currency_id": "string",
+     "name": "string",
+     "description": "string",
+     "appeal_category": "string",
+     "business_unit": "string",
+     "business_units": "array",
+     "start_date": "string",
+     "end_date": "string",
+     "goal": "number",
+     "appeal_report_1": "string",
+     "site_id": "string",
+     "membership_program": "string",
+     "site_required": "boolean",
+     "base_currency_id": "string",
+     "campaign_id": "string",
+     "campaign_name": "string",
+     "campaign_start_date_utc": "string",
+     "campaign_end_date_utc": "string",
+     "total_amount": "number",
+     "total_donors": "integer",
+     "donation_type": "string",
+     "total_transactions": "integer",
+     "category": "string",
+     "date_added": "string",
+     "date_modified": "string",
+     "inactive": "boolean",
+     "lookup_id": "string",
+     "solicitor_id": "integer",
+     "full_name": "string",
+     "campaign": "string",
+     "appeal_id": "string",
+     "appeal_category_id": "integer",
+     "default_fund_id": "integer",
+     "notes": "string",
+     "number_solicited": "integer",
+     "default_gift_amount": "number",
+     "campaign_category": "string",
+     "campaign_category_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#DELETE /fundraisers/{fundraiser_date_range_id}",
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#GET /constituentappeals/{constituent_id}/appeals",
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#GET /fundraisers/{fundraiser_date_range_id}",
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#PATCH /fundraisers/{fundraiser_date_range_id}",
+     "openapi/_original/blackbaud-altru-constituent-api-openapi.yml#POST /fundraisers",
+     "openapi/_original/blackbaud-altru-event-api-openapi.yml#GET /appeals/{event_id}",
+     "openapi/_original/blackbaud-altru-event-api-openapi.yml#GET /events/{event_id}/appeals",
+     "openapi/_original/blackbaud-altru-event-api-openapi.yml#PATCH /appeals/{event_id}",
+     "openapi/_original/blackbaud-altru-marketing-api-openapi.yml#DELETE /appeals/{appeal_id}",
+     "openapi/_original/blackbaud-altru-marketing-api-openapi.yml#GET /appeals/{appeal_id}",
+     "openapi/_original/blackbaud-altru-marketing-api-openapi.yml#PATCH /appeals/{appeal_id}",
+     "openapi/_original/blackbaud-altru-marketing-api-openapi.yml#POST /appeals"
+    ]
+   },
+   "bloomerang": {
+    "segments": [
+     "campaign",
+     "appeal",
+     "campaigns",
+     "appeals"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "Total": "integer",
+     "TotalFiltered": "integer",
+     "Start": "integer",
+     "ResultCount": "integer",
+     "Id": "integer",
+     "Raised": "number",
+     "RaisedCalculationMode": "string",
+     "StartDate": "string",
+     "EndDate": "string",
+     "Goal": "number",
+     "Name": "string",
+     "SortIndex": "integer",
+     "IsActive": "boolean",
+     "CreatedDate": "string",
+     "CreatedName": "string",
+     "LastModifiedDate": "string",
+     "LastModifiedName": "string"
+    },
+    "evidence": [
+     "openapi/_original/bloomerang-openapi.json#GET /appeal/{id}",
+     "openapi/_original/bloomerang-openapi.json#GET /appeals",
+     "openapi/_original/bloomerang-openapi.json#GET /campaign/{id}",
+     "openapi/_original/bloomerang-openapi.json#GET /campaigns",
+     "openapi/_original/bloomerang-openapi.json#POST /appeal",
+     "openapi/_original/bloomerang-openapi.json#POST /campaign",
+     "openapi/_original/bloomerang-openapi.json#PUT /appeal/{id}",
+     "openapi/_original/bloomerang-openapi.json#PUT /campaign/{id}"
+    ]
+   },
+   "bonterra-fka-everyaction": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "campaignId": "integer",
+     "name": "string",
+     "campaignType": "object",
+     "campaignDisplayName": "string",
+     "status": "string",
+     "contents": null,
+     "contentId": "integer",
+     "contentType": "object",
+     "shortName": "string",
+     "displayName": "string",
+     "description": "string",
+     "disposition": "string"
+    },
+    "evidence": [
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /campaigns",
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /campaigns/{campaignId}"
+    ]
+   },
+   "classy-org": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "current_page": "integer",
+     "first_page_url": "string",
+     "from": "integer",
+     "last_page": "integer",
+     "last_page_url": "string",
+     "next_page_url": "string",
+     "path": "string",
+     "per_page": "integer",
+     "prev_page_url": "string",
+     "to": "integer",
+     "total": "integer",
+     "name": "string",
+     "type": "string",
+     "goal": "number",
+     "currency_code": "string",
+     "started_at": "string",
+     "ended_at": "string",
+     "id": "integer",
+     "organization_id": "integer",
+     "status": "string",
+     "raw_current_raised_amount": "number",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/classy-org-openapi.yml#GET /campaigns/{id}",
+     "openapi/_original/classy-org-openapi.yml#GET /organizations/{id}/campaigns",
+     "openapi/_original/classy-org-openapi.yml#POST /organizations/{id}/campaigns",
+     "openapi/_original/classy-org-openapi.yml#PUT /campaigns/{id}"
+    ]
+   },
+   "donately": {
+    "segments": [
+     "campaigns",
+     "fundraisers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "data": "array",
+     "summary": "object",
+     "params": "object",
+     "account_id": "string",
+     "title": "string",
+     "goal_in_cents": "integer",
+     "description": "string",
+     "campaign_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/donately-openapi.yml#DELETE /campaigns/{id}",
+     "openapi/_original/donately-openapi.yml#GET /campaigns",
+     "openapi/_original/donately-openapi.yml#GET /campaigns/{id}",
+     "openapi/_original/donately-openapi.yml#GET /fundraisers",
+     "openapi/_original/donately-openapi.yml#GET /fundraisers/{id}",
+     "openapi/_original/donately-openapi.yml#PATCH /campaigns/{id}",
+     "openapi/_original/donately-openapi.yml#PATCH /fundraisers/{id}",
+     "openapi/_original/donately-openapi.yml#POST /campaigns",
+     "openapi/_original/donately-openapi.yml#POST /fundraisers"
+    ]
+   },
+   "donorbox": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/donorbox-openapi.json#GET /api/agent/campaigns",
+     "openapi/_original/donorbox-openapi.json#GET /api/agent/campaigns/{id}"
+    ]
+   },
+   "fundraiseup": {
+    "segments": [
+     "fundraisers",
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "account": null,
+     "campaign_page_url": "string",
+     "code": "string",
+     "currency": "string",
+     "designation_mode": "string",
+     "designations": "array",
+     "end_date": "string",
+     "frequencies": "array",
+     "id": "string",
+     "name": "string",
+     "status": "string",
+     "tags": "array",
+     "campaign": "object",
+     "created_at": "string",
+     "description": "string",
+     "designation": "object",
+     "goal": "object",
+     "image": "object",
+     "slug": "string",
+     "livemode": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/campaigns",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/campaigns/{id}",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/fundraisers",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/fundraisers/{id}",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/fundraisers",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/fundraisers/{id}"
+    ]
+   },
+   "givebutter": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "code": "string",
+     "account_id": "string",
+     "event_id": "string",
+     "type": "string",
+     "title": "string",
+     "subtitle": "string",
+     "description": "string",
+     "slug": "string",
+     "url": "string",
+     "goal": [
+      "integer",
+      "null"
+     ],
+     "raised": "number",
+     "donors": "integer",
+     "currency": "string",
+     "cover": "string",
+     "status": "string",
+     "timezone": "string",
+     "end_at": "string",
+     "event": "object",
+     "settings": "array",
+     "created_at": "string",
+     "updated_at": "string",
+     "beneficiary_id": [
+      "integer",
+      "null"
+     ],
+     "published": "boolean",
+     "public": "boolean",
+     "short_code": [
+      "string",
+      "null"
+     ],
+     "default_appeal_id": [
+      "integer",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/givebutter-docs-api.json#DELETE /v1/campaigns/{campaign}",
+     "openapi/_original/givebutter-docs-api.json#GET /sso/v1/campaigns/{campaign}",
+     "openapi/_original/givebutter-docs-api.json#GET /v1/campaigns",
+     "openapi/_original/givebutter-docs-api.json#GET /v1/campaigns/{campaign}",
+     "openapi/_original/givebutter-docs-api.json#POST /v1/campaigns",
+     "openapi/_original/givebutter-docs-api.json#PUT /v1/campaigns/{campaign}"
+    ]
+   },
+   "gofundme": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "address1": "string",
+     "campaign_template_id": "integer",
+     "studio_template_id": "integer",
+     "is_linked": "boolean",
+     "linked_at": "string",
+     "unlinked_at": "string",
+     "canonical_url": "string",
+     "category_id": "integer",
+     "channel_id": "integer",
+     "channel_keywords": "string",
+     "city": "string",
+     "contact_email": "string",
+     "contact_phone": "string",
+     "country": "string",
+     "created_at": "string",
+     "created_with": "string",
+     "currency_code": "string",
+     "default_page_appeal_email": "string",
+     "default_page_goal": "number",
+     "default_page_thank_you_email": "string",
+     "default_team_appeal_email": "string",
+     "default_team_goal": "number",
+     "default_team_thank_you_email": "string",
+     "designation_id": "integer",
+     "display_group_name": "boolean",
+     "ended_at": "string",
+     "effective_fixed_fot_percent": "string",
+     "effective_flex_rate_percent": "number",
+     "effective_recaptcha_settings": "string",
+     "external_id": "string",
+     "external_url": "string",
+     "goal": "number",
+     "hide_from_profile": "boolean",
+     "id": "integer",
+     "internal_name": "string",
+     "is_fees_free": "boolean",
+     "is_general": "number",
+     "location_details": "string",
+     "minimum_donation_amount": "number",
+     "name": "string",
+     "organization_id": "integer",
+     "postal_code": "string",
+     "raw_currency_code": "string",
+     "raw_goal": "string",
+     "redirect_url": "string",
+     "sort_designation_by": "string",
+     "started_at": "string",
+     "state": "string",
+     "status": "string",
+     "timezone_identifier": "string",
+     "type": "string",
+     "updated_at": "string",
+     "venue": "string",
+     "add_registration_fee": "boolean",
+     "allow_duplicate_fundraisers": "boolean",
+     "allow_fundraising_pages": "boolean",
+     "allow_team_fundraising": "boolean",
+     "default_page_appeal": "string",
+     "default_page_post_asset_id": "integer",
+     "default_page_post_body": "string",
+     "default_page_post_title": "string",
+     "default_team_appeal": "string",
+     "default_team_post_asset_id": "integer",
+     "default_team_post_body": "string",
+     "default_team_post_title": "string",
+     "default_thank_you_text": "string",
+     "fixed_fot_percent": "string",
+     "flex_rate_percent": "number",
+     "is_billing_address_required": "boolean",
+     "is_ended_at_hidden": "boolean",
+     "is_started_at_hidden": "boolean",
+     "pages_can_set_appeal": "boolean",
+     "pages_can_set_goal": "boolean",
+     "team_membership_policy": "string",
+     "teams_can_set_appeal": "boolean",
+     "teams_can_set_goal": "boolean",
+     "ticket_pass_on_fees": "boolean",
+     "allow_ecards": "boolean",
+     "classy_mode_appeal": "string",
+     "classy_mode_checked_by_default": "boolean",
+     "classy_mode_enabled": "boolean",
+     "checkout_corporate_donation_enabled": "boolean",
+     "corporate_donation_enabled": "boolean",
+     "custom_url": "string",
+     "daf_enabled": "boolean",
+     "dcf_enabled": "boolean",
+     "dcf_allowed": "boolean",
+     "disable_donation_attribution": "boolean",
+     "hide_anonymous_donations": "boolean",
+     "hide_recurring_end_date": "boolean",
+     "hide_contact_opt_in": "boolean",
+     "hide_donation_amounts": "boolean",
+     "hide_dedications": "boolean",
+     "hide_donation_comments": "boolean",
+     "offer_dedication_postal_notifications": "boolean",
+     "opt_in_checked_by_default": "boolean",
+     "return_url": "string",
+     "send_dedication_emails": "boolean",
+     "logo_id": "integer",
+     "logo_url": "string",
+     "team_cover_photo_id": "integer",
+     "team_cover_photo_url": "string",
+     "crypto_giving": "string",
+     "embedded_giving": "string",
+     "exit_modal": "boolean",
+     "use_intelligent_ask_onetime": "boolean",
+     "use_intelligent_ask_recurring": "boolean",
+     "whitelist_url": "string",
+     "fundraising_tracking_code": "string",
+     "current_page": "integer",
+     "data": "array",
+     "first_page_url": "string",
+     "from": "integer",
+     "last_page": "integer",
+     "last_page_url": "string",
+     "next_page_url": "string",
+     "path": "string",
+     "per_page": "integer",
+     "prev_page_url": "string",
+     "links": "array",
+     "to": "integer",
+     "total": "integer"
+    },
+    "evidence": [
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /campaigns/{campaign}",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /members/{member_id}/campaigns",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /organizations/{organization}/campaigns",
+     "openapi/_original/gofundme-pro-api-openapi.json#PUT /campaigns/{campaign}"
+    ]
+   },
+   "goodstack": {
+    "segments": [
+     "fundraisers",
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "visibility": "string",
+     "title": "string",
+     "story": "string",
+     "imageUrl": "string",
+     "branding": "object",
+     "fundraisingCampaign": "object",
+     "organisationId": "string",
+     "organisation": null,
+     "organiser": "object",
+     "targetCountries": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "closedAt": "string",
+     "shortDescription": "string",
+     "description": "string",
+     "coverImage": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "status": "string",
+     "fundraiserIds": "array",
+     "opportunityIds": "array",
+     "organisationIds": "array",
+     "organisations": "array",
+     "cancelledAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/goodstack-openapi.json#GET /v1/fundraisers",
+     "openapi/_original/goodstack-openapi.json#GET /v1/giving/campaigns"
+    ]
+   },
+   "iab-tech-lab": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/iab-tech-lab-buyer-agent-openapi.json#GET /meta/campaigns",
+     "openapi/_original/iab-tech-lab-buyer-agent-openapi_2.json#GET /meta/campaigns"
+    ]
+   },
+   "neonone": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "code": "string",
+     "isDefault": "boolean",
+     "socialFundraising": "object"
+    },
+    "evidence": [
+     "openapi/_original/neonone-openapi.yml#DELETE /campaigns/{id}",
+     "openapi/_original/neonone-openapi.yml#GET /campaigns",
+     "openapi/_original/neonone-openapi.yml#GET /campaigns/{id}",
+     "openapi/_original/neonone-openapi.yml#PATCH /campaigns/{id}",
+     "openapi/_original/neonone-openapi.yml#POST /campaigns",
+     "openapi/_original/neonone-openapi.yml#PUT /campaigns/{id}"
+    ]
+   },
+   "overflow": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "archivedAt": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "name": "string",
+     "isSubcampaign": "boolean",
+     "startDate": "string",
+     "endDate": "string",
+     "status": "string",
+     "displayOrder": "number",
+     "hideFromDonors": "boolean",
+     "isActive": "boolean",
+     "locationIds": "array",
+     "parentCampaigns": "array",
+     "subcampaigns": "array",
+     "applyToAllCampaigns": "boolean",
+     "totalContributionCount": "number",
+     "totalContributionValue": "number",
+     "uniqueDonorCount": "number"
+    },
+    "evidence": [
+     "openapi/_original/overflow-openapi-original.json#GET /api/v3/campaigns",
+     "openapi/_original/overflow-openapi-original.json#GET /api/v3/campaigns/{campaignId}"
+    ]
+   },
+   "wefunder": {
+    "segments": [
+     "campaigns"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "type": "string",
+     "attributes": "object",
+     "company_name": "string",
+     "company_id": "integer",
+     "state": "string",
+     "access_level": "integer"
+    },
+    "evidence": [
+     "openapi/_original/wefunder-openapi-original.yml#GET /attribution/campaigns",
+     "openapi/_original/wefunder-openapi-original.yml#GET /campaigns"
+    ]
+   }
+  },
+  "fund": {
+   "blackbaud": {
+    "segments": [
+     "funds",
+     "fund"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "category": "string",
+     "date_added": "string",
+     "date_modified": "string",
+     "description": "string",
+     "end_date": "string",
+     "goal": "object",
+     "inactive": "boolean",
+     "lookup_id": "string",
+     "start_date": "string",
+     "type": "string",
+     "name": "string",
+     "preserve_details_during_closing": "boolean",
+     "require_to_balance": "boolean",
+     "require_on_accounts_specified": "string",
+     "default": "string",
+     "fund_id": "integer",
+     "ui_fund_id": "string",
+     "interfund_type": "string",
+     "class": "string",
+     "interfund_debit_account": "object",
+     "interfund_credit_account": "object",
+     "interfund_single_account": "object",
+     "annotation": "string",
+     "beginning_balance_locked": "boolean",
+     "beginning_balance_locked_date": "string",
+     "fund_balance_account": "object",
+     "fund_requirements": "array",
+     "added_by": "string",
+     "modified_by": "string",
+     "record_id": "integer",
+     "constituent_id": "string",
+     "import_id": "string",
+     "is_constituent": "boolean",
+     "is_deceased": "boolean",
+     "is_inactive": "boolean",
+     "last_name": "string",
+     "first_name": "string",
+     "middle_name": "string",
+     "key_indicator": "string",
+     "maiden_name": "string",
+     "org_name": "string",
+     "gender": "string",
+     "address_block": "string",
+     "address_city_state": "string",
+     "address_post_code": "string",
+     "primary_email": "string",
+     "primary_phone": "string",
+     "title1": "string",
+     "suffix1": "string",
+     "birth_date": "object",
+     "preferred_name": "string",
+     "spouse_first_name": "string",
+     "spouse_last_name": "string",
+     "fund_category": "string",
+     "fund_type": "string",
+     "campaign": "string",
+     "default_appeal": "string",
+     "fund_category_id": "integer",
+     "fund_type_id": "integer",
+     "campaign_id": "integer",
+     "default_appeal_id": "integer",
+     "notes": "string",
+     "restricted": "boolean",
+     "relation_id": "integer",
+     "relation_description": "string",
+     "relationship_type": "string",
+     "reciprocal_relationship_type": "string",
+     "date_from": "string",
+     "date_to": "string"
+    },
+    "evidence": [
+     "openapi/_original/blackbaud-fundraising-api-openapi.yml#GET /funds",
+     "openapi/_original/blackbaud-fundraising-api-openapi.yml#GET /funds/{fund_id}",
+     "openapi/_original/blackbaud-general-ledger-api-openapi.yml#GET /accounts/funds",
+     "openapi/_original/blackbaud-general-ledger-api-openapi.yml#GET /funds/{fund_id}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#DELETE /v1/re/funds/{id}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/constituents/fund/{fundId}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/funds",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/funds/{id}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#GET /v1/re/relationships/constituents/fund/{fundId}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#PATCH /v1/re/funds/{id}",
+     "openapi/_original/blackbaud-nxt-data-integration-api-openapi.yml#POST /v1/re/funds"
+    ]
+   },
+   "bloomerang": {
+    "segments": [
+     "fund",
+     "funds",
+     "designations",
+     "designation"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "Total": "integer",
+     "TotalFiltered": "integer",
+     "Start": "integer",
+     "ResultCount": "integer",
+     "Id": "integer",
+     "GeneralLedgerClass": "string",
+     "DefaultQuickbooksAccountId": "integer",
+     "QuickbooksAccountIds": "array",
+     "SortIndex": "integer",
+     "Name": "string",
+     "IsDefault": "boolean",
+     "IsActive": "boolean",
+     "DesignationNumber": "integer",
+     "TransactionId": "integer",
+     "Amount": "number",
+     "NonDeductibleAmount": "number",
+     "Note": "string",
+     "AcknowledgementStatus": "string",
+     "AcknowledgementInteractionIds": "array",
+     "Fund": "object",
+     "QuickbooksAccount": "object",
+     "Campaign": "object",
+     "Appeal": "object",
+     "Tribute": "object",
+     "TributeType": "string",
+     "SoftCreditIds": "array",
+     "Raised": "number",
+     "Revenue": "number",
+     "IsPledgePaymentViaSoftCredit": "boolean",
+     "RaisedCalculationMode": "string",
+     "AttachmentIds": "array",
+     "CustomValues": "array",
+     "QuickBooksOnlineStatus": "string",
+     "AuditTrail": "object",
+     "Fundraiser": "object",
+     "Type": "string"
+    },
+    "evidence": [
+     "openapi/_original/bloomerang-openapi.json#GET /fund/{id}",
+     "openapi/_original/bloomerang-openapi.json#GET /funds",
+     "openapi/_original/bloomerang-openapi.json#GET /transactions/designation/{id}",
+     "openapi/_original/bloomerang-openapi.json#GET /transactions/designations",
+     "openapi/_original/bloomerang-openapi.json#POST /fund",
+     "openapi/_original/bloomerang-openapi.json#PUT /fund/{id}"
+    ]
+   },
+   "bonterra-fka-everyaction": {
+    "segments": [
+     "designations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "designationId": "integer",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /designations",
+     "openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /designations/{designationId}"
+    ]
+   },
+   "classy-org": {
+    "segments": [
+     "designations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "current_page": "integer",
+     "first_page_url": "string",
+     "from": "integer",
+     "last_page": "integer",
+     "last_page_url": "string",
+     "next_page_url": "string",
+     "path": "string",
+     "per_page": "integer",
+     "prev_page_url": "string",
+     "to": "integer",
+     "total": "integer",
+     "name": "string",
+     "description": "string",
+     "active": "boolean",
+     "id": "integer",
+     "organization_id": "integer",
+     "campaign_id": "integer",
+     "raw_current_amount": "number",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/classy-org-openapi.yml#GET /campaigns/{id}/designations",
+     "openapi/_original/classy-org-openapi.yml#GET /designations/{id}",
+     "openapi/_original/classy-org-openapi.yml#GET /organizations/{id}/designations",
+     "openapi/_original/classy-org-openapi.yml#POST /organizations/{id}/designations",
+     "openapi/_original/classy-org-openapi.yml#PUT /designations/{id}"
+    ]
+   },
+   "fundraiseup": {
+    "segments": [
+     "designations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "account": "object",
+     "code": "string",
+     "created_at": "string",
+     "id": "string",
+     "is_default": "boolean",
+     "name": "string",
+     "updated_at": "string",
+     "livemode": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/fundraiseup-openapi.json#DELETE /v1/designations/{id}",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/designations",
+     "openapi/_original/fundraiseup-openapi.json#GET /v1/designations/{id}",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/designations",
+     "openapi/_original/fundraiseup-openapi.json#POST /v1/designations/{id}"
+    ]
+   },
+   "givebutter": {
+    "segments": [
+     "funds"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": [
+      "string",
+      "null"
+     ],
+     "code": [
+      "string",
+      "null"
+     ],
+     "name": "string",
+     "raised": "number",
+     "supporters": "integer",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/givebutter-docs-api.json#DELETE /v1/funds/{fund}",
+     "openapi/_original/givebutter-docs-api.json#GET /v1/funds",
+     "openapi/_original/givebutter-docs-api.json#GET /v1/funds/{fund}",
+     "openapi/_original/givebutter-docs-api.json#POST /v1/funds",
+     "openapi/_original/givebutter-docs-api.json#PUT /v1/funds/{fund}"
+    ]
+   },
+   "gofundme": {
+    "segments": [
+     "designations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "city": "string",
+     "created_at": "string",
+     "description": "string",
+     "end_time": "string",
+     "external_reference_id": "string",
+     "goal": "string",
+     "id": "integer",
+     "is_active": "boolean",
+     "is_complete": "boolean",
+     "is_default": "boolean",
+     "name": "string",
+     "organization_id": "integer",
+     "postal_code": "string",
+     "start_time": "string",
+     "state": "string",
+     "updated_at": "string",
+     "end_date": "string",
+     "start_date": "string",
+     "current_page": "integer",
+     "data": "array",
+     "first_page_url": "string",
+     "from": "integer",
+     "last_page": "integer",
+     "last_page_url": "string",
+     "next_page_url": "string",
+     "path": "string",
+     "per_page": "integer",
+     "prev_page_url": "string",
+     "links": "array",
+     "to": "integer",
+     "total": "integer"
+    },
+    "evidence": [
+     "openapi/_original/gofundme-pro-api-openapi.json#DELETE /designations/{designation}",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /designations/{designation}",
+     "openapi/_original/gofundme-pro-api-openapi.json#GET /organizations/{organization}/designations",
+     "openapi/_original/gofundme-pro-api-openapi.json#POST /organizations/{organization}/designations",
+     "openapi/_original/gofundme-pro-api-openapi.json#PUT /designations/{designation}"
+    ]
+   },
+   "neonone": {
+    "segments": [
+     "funds"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/neonone-openapi.yml#GET /properties/funds"
+    ]
+   },
+   "planning-center": {
+    "segments": [
+     "funds"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/planning-center-openapi.yml#GET /giving/v2/funds"
+    ]
+   },
+   "submittable": {
+    "segments": [
+     "funds"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "continuationToken": "string",
+     "totalCount": "integer",
+     "fundId": "string",
+     "name": "string",
+     "balance": "number",
+     "currency": "string"
+    },
+    "evidence": [
+     "openapi/_original/submittable-openapi.yml#GET /funds"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "almabase",
+    "apiaddicts",
+    "arc-prize-foundation",
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction",
+    "breeze-chms",
+    "broad-institute",
+    "candid",
+    "cdisc",
+    "chariot",
+    "charityapi",
+    "charitysense-com",
+    "classy-org",
+    "codeberg",
+    "democracy-works",
+    "donately",
+    "donorbox",
+    "fourthwall",
+    "fundmomentum",
+    "fundraiseup",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "hpsf",
+    "iab-tech-lab",
+    "indiegogo",
+    "internet2",
+    "koko",
+    "leo",
+    "levitate",
+    "lichess",
+    "lightning-social-ventures",
+    "liquidonate",
+    "memberclicks",
+    "movehome-org",
+    "nationbuilder",
+    "neonone",
+    "overflow",
+    "planning-center",
+    "plinth-us-grants-data",
+    "publiq",
+    "radiant-earth",
+    "runsignup",
+    "streamelements",
+    "submittable",
+    "wefunder",
+    "wikipedia",
+    "wikisource"
+   ],
+   "kebab-case": [
+    "apiaddicts",
+    "broad-institute",
+    "charitysense-com",
+    "classy-org",
+    "codeberg",
+    "democracy-works",
+    "fourthwall",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "hpsf",
+    "iab-tech-lab",
+    "lichess",
+    "lightning-social-ventures",
+    "liquidonate",
+    "memberclicks",
+    "movehome-org",
+    "overflow",
+    "planning-center",
+    "plinth-us-grants-data",
+    "publiq",
+    "radiant-earth",
+    "runsignup",
+    "wefunder",
+    "wikipedia"
+   ],
+   "snake_case": [
+    "almabase",
+    "blackbaud",
+    "breeze-chms",
+    "broad-institute",
+    "chariot",
+    "charityapi",
+    "codeberg",
+    "fundraiseup",
+    "internet2",
+    "koko",
+    "nationbuilder",
+    "planning-center",
+    "wefunder"
+   ],
+   "camelCase": [
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction",
+    "broad-institute",
+    "democracy-works",
+    "indiegogo",
+    "liquidonate",
+    "neonone"
+   ],
+   "other": [
+    "blackbaud",
+    "codeberg",
+    "fundmomentum",
+    "iab-tech-lab",
+    "lichess",
+    "publiq"
+   ],
+   "PascalCase": [
+    "arc-prize-foundation",
+    "blackbaud",
+    "goodstack",
+    "levitate"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "almabase",
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction",
+    "broad-institute",
+    "cdisc",
+    "chariot",
+    "charityapi",
+    "charitysense-com",
+    "classy-org",
+    "codeberg",
+    "donately",
+    "donorbox",
+    "fourthwall",
+    "fundraiseup",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "hpsf",
+    "internet2",
+    "levitate",
+    "lichess",
+    "lightning-social-ventures",
+    "movehome-org",
+    "nationbuilder",
+    "neonone",
+    "planning-center",
+    "plinth-us-grants-data",
+    "publiq",
+    "streamelements",
+    "wefunder",
+    "wikipedia",
+    "wikisource"
+   ],
+   "camelCase": [
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction",
+    "broad-institute",
+    "cdisc",
+    "chariot",
+    "codeberg",
+    "democracy-works",
+    "fourthwall",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "iab-tech-lab",
+    "leo",
+    "levitate",
+    "lichess",
+    "memberclicks",
+    "neonone",
+    "overflow",
+    "publiq",
+    "streamelements",
+    "submittable"
+   ],
+   "snake_case": [
+    "almabase",
+    "arc-prize-foundation",
+    "blackbaud",
+    "breeze-chms",
+    "candid",
+    "codeberg",
+    "gofundme",
+    "iab-tech-lab",
+    "movehome-org",
+    "planning-center",
+    "plinth-us-grants-data",
+    "radiant-earth",
+    "runsignup",
+    "wefunder",
+    "wikipedia",
+    "wikisource"
+   ],
+   "other": [
+    "bonterra-fka-everyaction",
+    "codeberg"
+   ],
+   "kebab-case": [
+    "broad-institute",
+    "codeberg"
+   ],
+   "PascalCase": [
+    "charitysense-com"
+   ]
+  },
+  "property": {
+   "lower": [
+    "almabase",
+    "blackbaud",
+    "bonterra-fka-everyaction",
+    "chariot",
+    "classy-org",
+    "donately",
+    "fundraiseup",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "nationbuilder",
+    "neonone",
+    "overflow",
+    "planning-center",
+    "submittable",
+    "wefunder"
+   ],
+   "snake_case": [
+    "almabase",
+    "blackbaud",
+    "chariot",
+    "classy-org",
+    "donately",
+    "fundraiseup",
+    "givebutter",
+    "gofundme",
+    "wefunder"
+   ],
+   "camelCase": [
+    "bonterra-fka-everyaction",
+    "goodstack",
+    "neonone",
+    "overflow",
+    "submittable"
+   ],
+   "PascalCase": [
+    "bloomerang"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction",
+    "breeze-chms",
+    "broad-institute",
+    "cdisc",
+    "chariot",
+    "classy-org",
+    "codeberg",
+    "democracy-works",
+    "donorbox",
+    "fundraiseup",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "hpsf",
+    "iab-tech-lab",
+    "internet2",
+    "koko",
+    "levitate",
+    "lichess",
+    "lightning-social-ventures",
+    "movehome-org",
+    "nationbuilder",
+    "overflow",
+    "planning-center",
+    "plinth-us-grants-data",
+    "publiq",
+    "runsignup",
+    "streamelements",
+    "submittable",
+    "wefunder",
+    "wikipedia",
+    "wikisource"
+   ],
+   "camelCase": [
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction",
+    "broad-institute",
+    "cdisc",
+    "chariot",
+    "classy-org",
+    "codeberg",
+    "democracy-works",
+    "donorbox",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "indiegogo",
+    "levitate",
+    "lichess",
+    "lightning-social-ventures",
+    "memberclicks",
+    "neonone",
+    "overflow",
+    "publiq",
+    "streamelements",
+    "submittable"
+   ],
+   "snake_case": [
+    "blackbaud",
+    "breeze-chms",
+    "broad-institute",
+    "chariot",
+    "codeberg",
+    "donately",
+    "fourthwall",
+    "fundraiseup",
+    "givebutter",
+    "gofundme",
+    "hpsf",
+    "iab-tech-lab",
+    "lichess",
+    "movehome-org",
+    "nationbuilder",
+    "planning-center",
+    "plinth-us-grants-data",
+    "publiq",
+    "runsignup",
+    "wefunder",
+    "wikipedia",
+    "wikisource"
+   ],
+   "other": [
+    "bonterra-fka-everyaction",
+    "chariot",
+    "goodstack",
+    "iab-tech-lab",
+    "internet2",
+    "nationbuilder",
+    "publiq"
+   ],
+   "PascalCase": [
+    "bonterra-fka-everyaction",
+    "charitysense-com"
+   ],
+   "kebab-case": [
+    "codeberg",
+    "democracy-works"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "blackbaud",
+    "broad-institute",
+    "cdisc",
+    "codeberg",
+    "donorbox",
+    "givebutter",
+    "gofundme",
+    "goodstack",
+    "hpsf",
+    "internet2",
+    "lichess",
+    "lightning-social-ventures",
+    "movehome-org",
+    "overflow",
+    "plinth-us-grants-data",
+    "publiq",
+    "runsignup",
+    "streamelements"
+   ],
+   "limit": [
+    "blackbaud",
+    "breeze-chms",
+    "chariot",
+    "charitysense-com",
+    "codeberg",
+    "fundraiseup",
+    "gofundme",
+    "iab-tech-lab",
+    "internet2",
+    "levitate",
+    "movehome-org",
+    "overflow",
+    "plinth-us-grants-data",
+    "publiq",
+    "streamelements",
+    "wefunder",
+    "wikipedia"
+   ],
+   "page_size": [
+    "blackbaud",
+    "broad-institute",
+    "cdisc",
+    "goodstack",
+    "lightning-social-ventures",
+    "memberclicks",
+    "nationbuilder",
+    "neonone",
+    "submittable"
+   ],
+   "offset": [
+    "blackbaud",
+    "breeze-chms",
+    "iab-tech-lab",
+    "planning-center",
+    "streamelements"
+   ],
+   "cursor": [
+    "chariot",
+    "charitysense-com",
+    "goodstack",
+    "overflow",
+    "wefunder"
+   ],
+   "per_page": [
+    "codeberg",
+    "gofundme",
+    "hpsf",
+    "movehome-org",
+    "planning-center"
+   ],
+   "start": [
+    "blackbaud",
+    "breeze-chms",
+    "broad-institute",
+    "publiq"
+   ],
+   "count": [
+    "goodstack",
+    "iab-tech-lab",
+    "wikipedia",
+    "wikisource"
+   ],
+   "skip": [
+    "blackbaud",
+    "bloomerang",
+    "bonterra-fka-everyaction"
+   ],
+   "before": [
+    "codeberg",
+    "lichess",
+    "streamelements"
+   ],
+   "size": [
+    "blackbaud",
+    "publiq"
+   ],
+   "starting_after": [
+    "bonterra-fka-everyaction",
+    "fundraiseup"
+   ],
+   "page_token": [
+    "chariot",
+    "levitate"
+   ],
+   "next": [
+    "wikipedia",
+    "wikisource"
+   ],
+   "max_results": [
+    "blackbaud"
+   ],
+   "top": [
+    "bonterra-fka-everyaction"
+   ],
+   "after": [
+    "streamelements"
+   ]
+  }
+ }
+}

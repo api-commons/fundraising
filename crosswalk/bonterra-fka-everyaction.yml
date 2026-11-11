@@ -1,0 +1,18 @@
+provider: bonterra-fka-everyaction
+apis_io: https://apis.io/providers/bonterra-fka-everyaction/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - contributions
+    properties:
+      amount: amount
+      status: status
+      fund_id: designation
+      payment_method: paymentType
+    core_coverage: 0.167
+    evidence:
+    - openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /contributions/{alternateIdType}:{alternateId}
+    - openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#GET /contributions/{contributionId}
+    - openapi/_original/bonterra-fka-everyaction-everyaction-8-openapi.yml#POST /contributions

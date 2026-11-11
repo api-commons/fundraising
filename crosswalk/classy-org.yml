@@ -1,0 +1,57 @@
+provider: classy-org
+apis_io: https://apis.io/providers/classy-org/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donor:
+    path_segment:
+    - supporters
+    properties:
+      email: email_address
+      first_name: first_name
+      id: id
+      last_name: last_name
+      created_at: created_at
+      phone: phone
+      organization_id: organization_id
+      updated_at: updated_at
+    core_coverage: 0.727
+    evidence:
+    - openapi/_original/classy-org-openapi.yml#GET /organizations/{id}/supporters
+    - openapi/_original/classy-org-openapi.yml#GET /supporters/{id}
+    - openapi/_original/classy-org-openapi.yml#POST /organizations/{id}/supporters
+    - openapi/_original/classy-org-openapi.yml#PUT /supporters/{id}
+  fundraising_campaign:
+    path_segment:
+    - campaigns
+    properties:
+      created_at: created_at
+      id: id
+      name: name
+      goal: goal
+      status: status
+      updated_at: updated_at
+      currency: currency_code
+    core_coverage: 0.778
+    evidence:
+    - openapi/_original/classy-org-openapi.yml#GET /campaigns/{id}
+    - openapi/_original/classy-org-openapi.yml#GET /organizations/{id}/campaigns
+    - openapi/_original/classy-org-openapi.yml#POST /organizations/{id}/campaigns
+    - openapi/_original/classy-org-openapi.yml#PUT /campaigns/{id}
+  fund:
+    path_segment:
+    - designations
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      updated_at: updated_at
+      campaign_id: campaign_id
+      description: description
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/classy-org-openapi.yml#GET /campaigns/{id}/designations
+    - openapi/_original/classy-org-openapi.yml#GET /designations/{id}
+    - openapi/_original/classy-org-openapi.yml#GET /organizations/{id}/designations
+    - openapi/_original/classy-org-openapi.yml#POST /organizations/{id}/designations
+    - openapi/_original/classy-org-openapi.yml#PUT /designations/{id}

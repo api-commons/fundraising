@@ -1,0 +1,29 @@
+provider: goodstack
+apis_io: https://apis.io/providers/goodstack/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - donations
+    properties:
+      id: id
+      amount: amount
+      metadata: metadata
+      created_at: createdAt
+      donor_id: accountId
+      type: type
+      campaign_id: fundraiserId
+      status: status
+      anonymous: anonymous
+      updated_at:
+      - updated
+      - updatedAt
+      currency: currencyCode
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/goodstack-openapi.json#GET /v1/donations
+    - openapi/_original/goodstack-openapi.json#GET /v1/donations/{id}
+    - openapi/_original/goodstack-openapi.json#GET /v1/giving/donations
+    - openapi/_original/goodstack-openapi.json#PATCH /v1/donation-sessions/{sessionId}/donations
+    - openapi/_original/goodstack-openapi.json#PATCH /v1/donations/{id}

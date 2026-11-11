@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/fundraising/main/schema/donation.json",
+  "title": "Donation",
+  "description": "The common donation in Nonprofit Fundraising, distilled from 11 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.727,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "id",
+        "constituent_id"
+      ]
+    },
+    "amount": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "amount"
+      ]
+    },
+    "metadata": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "custom_fields",
+        "metadata",
+        "attributes",
+        "properties"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "date_added"
+      ],
+      "format": "date-time"
+    },
+    "donor_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "accountId",
+        "constituent",
+        "account_id",
+        "supporter",
+        "donor",
+        "donorId"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "type",
+        "gift_type",
+        "donation_type"
+      ]
+    },
+    "campaign_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "campaign",
+        "campaign_id",
+        "fundraiserId",
+        "campaignId"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "status",
+        "gift_status"
+      ]
+    },
+    "anonymous": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.364,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "anonymous",
+        "is_anonymous"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.364,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "updatedAt",
+        "date_modified",
+        "updated_at",
+        "updated"
+      ],
+      "format": "date-time"
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "currency",
+        "currencyCode"
+      ]
+    },
+    "fund_id": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "designation",
+        "fund"
+      ]
+    },
+    "payment_method": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "paymentType",
+        "payment_method",
+        "paymentMethod"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "fundraising",
+    "concept": "donation",
+    "providers": 11,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

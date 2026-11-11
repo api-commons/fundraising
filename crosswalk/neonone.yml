@@ -1,0 +1,21 @@
+provider: neonone
+apis_io: https://apis.io/providers/neonone/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - donations
+    properties:
+      id: id
+      amount: amount
+      donor_id: accountId
+      campaign_id: campaign
+      fund_id: fund
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/neonone-openapi.yml#DELETE /donations/{id}
+    - openapi/_original/neonone-openapi.yml#GET /accounts/{id}/donations
+    - openapi/_original/neonone-openapi.yml#GET /donations/{id}
+    - openapi/_original/neonone-openapi.yml#PATCH /donations/{id}
+    - openapi/_original/neonone-openapi.yml#POST /donations

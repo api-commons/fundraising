@@ -1,0 +1,19 @@
+provider: nationbuilder
+apis_io: https://apis.io/providers/nationbuilder/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donation:
+    path_segment:
+    - donations
+    properties:
+      id: id
+      metadata: attributes
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/nationbuilder-v2-openapi-original.yml#DELETE /api/v2/donations/{id}
+    - openapi/_original/nationbuilder-v2-openapi-original.yml#GET /api/v2/donations
+    - openapi/_original/nationbuilder-v2-openapi-original.yml#GET /api/v2/donations/{id}
+    - openapi/_original/nationbuilder-v2-openapi-original.yml#PATCH /api/v2/donations/{id}
+    - openapi/_original/nationbuilder-v2-openapi-original.yml#POST /api/v2/donations

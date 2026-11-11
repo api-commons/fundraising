@@ -1,0 +1,56 @@
+aid: common-fundraising
+name: Nonprofit Fundraising
+type: Common
+description: 'The common Nonprofit Fundraising vocabulary, distilled from the harvested OpenAPI of 50 providers
+  in APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common
+  names to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Non-Profit
+- Nonprofit
+- Fundraising
+- Donations
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/fundraising/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-fundraising:fundraising
+  name: Common Nonprofit Fundraising Interface
+  description: The Nonprofit Fundraising interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/fundraising
+  tags:
+  - Non-Profit
+  - Nonprofit
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/adopters.yml
+  - type: Arazzo
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/arazzo.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: donor
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/schema/donor.json
+  - type: JSONSchema
+    name: donation
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/schema/donation.json
+  - type: JSONSchema
+    name: fundraising_campaign
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/schema/fundraising_campaign.json
+  - type: JSONSchema
+    name: fund
+    url: https://raw.githubusercontent.com/api-commons/fundraising/main/schema/fund.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/fundraising/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,66 @@
+provider: bloomerang
+apis_io: https://apis.io/providers/bloomerang/
+context: fundraising
+generated: '2026-11-11'
+concepts:
+  donor:
+    path_segment:
+    - constituent
+    - constituents
+    properties:
+      email: PrimaryEmail
+      first_name: FirstName
+      id: Id
+      last_name: LastName
+      address: PrimaryAddress
+      gender: Gender
+      name: FullName
+    core_coverage: 0.636
+    evidence:
+    - openapi/_original/bloomerang-openapi.json#DELETE /constituent/{id}
+    - openapi/_original/bloomerang-openapi.json#GET /constituent/{id}
+    - openapi/_original/bloomerang-openapi.json#GET /constituents
+    - openapi/_original/bloomerang-openapi.json#POST /constituent
+    - openapi/_original/bloomerang-openapi.json#PUT /constituent/{id}
+  fundraising_campaign:
+    path_segment:
+    - campaign
+    - appeal
+    - campaigns
+    - appeals
+    properties:
+      created_at: CreatedDate
+      id: Id
+      name: Name
+      goal: Goal
+      end_date: EndDate
+      start_date:
+      - Start
+      - StartDate
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/bloomerang-openapi.json#GET /appeal/{id}
+    - openapi/_original/bloomerang-openapi.json#GET /appeals
+    - openapi/_original/bloomerang-openapi.json#GET /campaign/{id}
+    - openapi/_original/bloomerang-openapi.json#GET /campaigns
+    - openapi/_original/bloomerang-openapi.json#POST /appeal
+  fund:
+    path_segment:
+    - fund
+    - funds
+    - designations
+    - designation
+    properties:
+      id: Id
+      name: Name
+      campaign_id:
+      - Campaign
+      - Appeal
+      is_default: IsDefault
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/bloomerang-openapi.json#GET /fund/{id}
+    - openapi/_original/bloomerang-openapi.json#GET /funds
+    - openapi/_original/bloomerang-openapi.json#GET /transactions/designation/{id}
+    - openapi/_original/bloomerang-openapi.json#GET /transactions/designations
+    - openapi/_original/bloomerang-openapi.json#POST /fund
